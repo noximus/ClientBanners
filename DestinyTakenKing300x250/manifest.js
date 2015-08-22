@@ -4,6 +4,6 @@ FT.manifest({
 	"height":250,
 	"clickTagCount":1,
 	"instantAds":[
-		{"name":"textVar", "type":"text", "default":"XXXXXXXXXXXXXXXXXXXXXX"}
+		{"name":"textVar", "type":"text", "default":"XXXXXXXXXXXXXXXX"}
 	]
 });
