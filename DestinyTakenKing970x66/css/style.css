@@ -68,16 +68,28 @@ div#finalFrame{
 	height: 66px;
 	z-index: 100;
 }
+img#greatness{
+	top: 7px;
+	right: 245px;
+}
+img#ps4logo{
+	bottom: 6px;
+    left: 9px;
+}
+img#bundlesweeps{
+	right: 5px;
+	top: 8px;
+}
 #lrnBtn{
 	top: 28px;
 	position: absolute;
 	right: 6px;
 	display: none;
 }
-#enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #finalFrame{
+#enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{
 	opacity: 0;
 }
-#tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness{
+#tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness, #ps4logo, #bundlesweeps{
 	display: none;
 	position: absolute;
 }
