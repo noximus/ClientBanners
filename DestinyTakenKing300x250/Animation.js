@@ -28,47 +28,16 @@ home_animation = (function() {
 			}
 		}
 	}
-
-
-
-
-	function Reset()
-	{
-		//TweenLite.killDelayedCallsTo([bg, frame1, frame2, frame3, frame4]);
-		/*TweenMax.killAll(false, false, true);
-		TweenMax.killAllTweens();*/
-
-	}
-
 	function init()
 	{
-
-		// TweenLite.to(end_frame_heart, 0, {scaleX:0, scaleY:0});
 		frame1();
-
-		// CTA BTN CLICKTAG //
-			// bind(document.getElementById('container'), 'click', function(e)
-			// {
-			// 	e.preventDefault();
-			// 	Enabler.exit("clickTag1");
-			// });
-
-/*
-		bind(document.getElementById('container'), 'click', function(e)
-		{
-			//Reset();
-			//init();
-			//console.log("KILLLLL");
-		});
-
-		*/
 	}
 	window.onload = function() {
 	  if (Manifest.isInitialized()) {
-	      manifestInitHandler();
+	    manifestInitHandler();
 	  } else {
-	      Manifest.addEventListener(studio.events.StudioEvent.INIT,
-	manifestInitHandler);
+	     Manifest.addEventListener(studio.events.StudioEvent.INIT,
+		manifestInitHandler);
 	  }
 	}
 
