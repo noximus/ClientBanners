@@ -5,7 +5,7 @@
 position: absolute;
 width:970px;
 height:66px;
-background: url('starbg.jpg');	
+background: url('../images/starbg.jpg');	
 overflow:hidden;
 	
 }
@@ -63,7 +63,7 @@ img#hashtag{
 }
 
 div#finalFrame{
-	background: url('frame4bg.jpg');
+	background: url('../images/frame4bg.jpg');
 	width: 970px;
 	height: 66px;
 	z-index: 100;
