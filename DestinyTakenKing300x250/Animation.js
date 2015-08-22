@@ -63,8 +63,8 @@ home_animation = (function() {
 	{
 
 		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.to(prize, .4, {delay:2,opacity: 1, ease: Linear.eastOut});
-		TweenLite.delayedCall(4.2, frame2);
+		TweenLite.to(prize, .4, {delay:1,opacity: 1, ease: Linear.eastOut});
+		TweenLite.delayedCall(4, frame2);
 	}
 
 	function frame2()
@@ -84,7 +84,7 @@ home_animation = (function() {
 		TweenLite.to(herosImg, 0.5, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.to(hashtag, 0.5, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.to(noPurch, 0.5, {delay:2.5, display: 'block', ease: Linear.easeOut});
-		TweenLite.delayedCall(6, frame4);
+		TweenLite.delayedCall(4, frame4);
 	}
 
 	function frame4()
