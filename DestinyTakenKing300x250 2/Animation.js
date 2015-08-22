@@ -110,21 +110,22 @@ home_animation = (function() {
 
 	function frame3()
 	{
-		TweenLite.to(tweet, 0.5, {opacity: .5, display: 'none', ease: Linear.easeOut});
-		TweenLite.to(heros, 0.5, {delay:0, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(herosImg, 0.5, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(hashtag, 0.5, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(noPurch, 0.5, {delay:2.5, display: 'block', ease: Linear.easeOut});
+		TweenLite.to(tweet, 0.3, {opacity: 0, display: 'none', ease: Linear.easeOut});
+		TweenLite.to(noPurch, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
+		TweenLite.to(heros, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
+		TweenLite.to(herosImg, 0.3, {delay:.5, display: 'block', opacity:1, ease: Linear.easeIn});
+		TweenLite.to(hashtag, 0.3, {delay:.5, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.delayedCall(6, frame4);
 	}
 
 	function frame4()
 	{
-		// TweenLite.to(heroFrame, 1, {display: 'none', ease: Linear.easeOut})
-		TweenLite.to(finalFrame, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(finaltxt, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(ps4logo, 0.5, {delay: .5, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(lrnBtn, 0.5, {delay: 2.5, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(heroFrame, 0.1, {display: 'none'})
+		TweenLite.to(finalFrame, 0.3, {delay: 0.2, display: 'block', ease: Linear.easeIn});
+		TweenLite.to(finaltxt, 0.3, {delay: .2, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(ps4logo, 0.3, {delay: .2, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(lrnBtn, 0.35, {delay: .3, opacity: 1, display:'block', ease: Linear.easeIn});
+// TweenLite.delayedCall(3.4, frame5);
 	}
 
 
