@@ -1,9 +1,9 @@
 FT.manifest({
-	"filename":"main.html",
-	"width":300,
-	"height":250,
+	"filename":"index.html",
+	"width":970,
+	"height":66,
 	"clickTagCount":1,
 	"instantAds":[
-		{"name":"textVar", "type":"text", "default":"XXXXXXXXXXXXXXXXXXXXXX"}
+		{"name":"textVar", "type":"text", "default":"XXXXXXXXXXXXXXXXXXX"}
 	]
 });
