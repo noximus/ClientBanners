@@ -8,6 +8,7 @@ height:250px;
 background: url('../images/starbg.jpg');	
 overflow:hidden;
 	font-family: 'Open Sans';
+	cursor: pointer;
 }
 
 #learnMore{
@@ -31,11 +32,12 @@ overflow:hidden;
 }
 #enter, #tweet{
 	height: 90px;
-	width: 235px;
+	width: 258px;
 	position: absolute;
-	top:60px;
-	left:30px;
+	top:70px;
+	left:21px;
 	color: #fff;
+	text-align: center;
 
 }
 #tweet, div#heros, p#hashtag{
@@ -50,7 +52,8 @@ overflow:hidden;
 #prize{
 	position: absolute;
 	top:63px;
-    left: 15px;
+    left: 21px;
+    width: 215px;
     font-size: 24px;
     font-family: 'Open Sans';
 }
@@ -129,6 +132,7 @@ h1.finaltxt{
 	left: 88px;
 	border: none;
 	padding: 10px 23px;
+	cursor: pointer;
 }
 #great{
 	letter-spacing: 2px;
