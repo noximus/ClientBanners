@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+position: absolute;
+width:728px;
+height:90px;
+background: url('../images/starbg.jpg');	
+overflow:hidden;
+cursor: pointer;
+	
+}
+
+#learnMore{
+	position: absolute;
+	right: 0px;
+	top: 66px;
+	z-index: 100;
+}
+#learnMore a{
+	display: block;
+}
+img#enterFor{
+	position: absolute;
+	top: 20px;
+    right: 123px;
+}
+
+#prize{
+	color: white;
+    width: 531px;
+    position: absolute;
+    right: 11px;
+    top: 42px;
+    font-size: 22px;
+}
+div#tweet{
+	position: absolute;
+	right: 150px;
+	top:13px;
+}
+
+div#wave{
+	position: absolute;
+	bottom: 0;
+	left: 0
+}
+div#wave img{
+	display: block;
+}
+div#logo{
+	position: absolute;
+	top: 5px;
+	right: 6px;
+}
+div#heros{
+	top: 0;
+}
+div#heros img{
+	opacity: 0;
+}
+img#hashtag{
+	top: 27px;
+	right: 180px;
+}
+
+div#finalFrame{
+	background: url('../images/frame4bg.jpg');
+	width: 728px;
+	height: 90px;
+	z-index: 100;
+}
+img#greatness{
+	top: 20px;
+	right: 145px;
+}
+img#ps4logo{
+	bottom: 6px;
+    left: 9px;
+}
+img#bundlesweeps{
+	right: 5px;
+	top: 8px;
+}
+#lrnBtn{
+	top: 51px;
+	position: absolute;
+	right: 6px;
+	display: none;
+}
+#enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{
+	opacity: 0;
+}
+#tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness, #ps4logo, #bundlesweeps{
+	display: none;
+	position: absolute;
+}

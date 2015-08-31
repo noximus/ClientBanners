@@ -22,17 +22,17 @@ cursor: pointer;
 }
 img#enterFor{
 	position: absolute;
-	top: 0;
-	right: 250px;
+	top: 5px;
+    right: 123px;
 }
 
-p#prize{
+#prize{
 	color: white;
-	width: 425px;
+    width: 531px;
     position: absolute;
-    right: 245px;
-    top: 3px;
-    font-size: 30px;
+    right: 121px;
+    top: 37px;
+    font-size: 22px;
 }
 div#tweet{
 	position: absolute;

@@ -14,9 +14,12 @@
 		</a>
 	</div>
 	<div id="enter">
-		<img src="images/enter.png" id="enterFor" width="425" height="35">
-		<p id="prize">XXXXXXXXXXXXXXXXXXX</p>
+		<img src="images/enter.png" id="enterFor" width="726" height="33">	
 	</div>
+	
+	<div id="prize"><img src="images/home_tag.png" width="346" height="33"></div>
+
+
 	 <div id="tweet">
 		<img src="images/tweet.png" width="421" height="66">
 	</div>
@@ -51,14 +54,7 @@
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query("#container"),
-	dynamicText = FT.query("#prize")
-
-	// Populate instantAd components
-	myFT.addEventListener("instantads", function(){
-		dynamicText.innerHTML = myFT.instantAds.textVar;
-		
-	});
+	container = FT.query(".container")
 
 	// Apply clickTags
 	myFT.applyClickTag(container, 1);
