@@ -22,17 +22,17 @@ cursor: pointer;
 }
 img#enterFor{
 	position: absolute;
-	top: 0;
-	right: 250px;
+	top: 5px;
+    right: 123px;
 }
 
-p#prize{
+#prize{
 	color: white;
-	width: 425px;
+    width: 531px;
     position: absolute;
-    right: 245px;
-    top: 3px;
-    font-size: 30px;
+    right: 121px;
+    top: 37px;
+    font-size: 22px;
 }
 div#tweet{
 	position: absolute;
@@ -42,7 +42,8 @@ div#tweet{
 div#wave{
 	position: absolute;
 	bottom: 0;
-	left: 0
+	left: 0;
+	z-index: 200000;
 }
 div#wave img{
 	display: block;
@@ -64,7 +65,8 @@ img#hashtag{
 }
 
 div#finalFrame{
-	background: url('../images/frame4bg.jpg');
+	text-align: center;
+	background-color: #17669e;
 	width: 970px;
 	height: 66px;
 	z-index: 100;

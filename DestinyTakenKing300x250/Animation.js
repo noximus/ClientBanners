@@ -63,13 +63,15 @@ home_animation = (function() {
 	{
 
 		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.to(prize, .4, {delay:1,opacity: 1, ease: Linear.eastOut});
+		TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+
 		TweenLite.delayedCall(4, frame2);
 	}
 
 	function frame2()
 	{
 
+		TweenLite.to(prize, 0.4, {opacity: 0, ease: Linear.eastOut});
 		TweenLite.to(enter, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
 		TweenLite.to(tweet, 0.5, {delay:.5,display: 'block', opacity: 1, ease: Linear.easeIn});
 		TweenLite.to(tweetp, 0.5, {delay:.3,display: 'block', opacity: 1, ease: Linear.easeIn});
@@ -92,20 +94,9 @@ home_animation = (function() {
 		// TweenLite.to(heroFrame, 1, {display: 'none', ease: Linear.easeOut})
 		TweenLite.to(finalFrame, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(finaltxt, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(ps4logo, 0.5, {delay: .5, opacity: 1, display:'block', ease: Linear.easeIn});
+		// TweenLite.to(ps4logo, 0.5, {delay: .5, opacity: 1, display:'block', ease: Linear.easeIn});
 		TweenLite.to(lrnBtn, 0.5, {delay: 2.5, opacity: 1, display:'block', ease: Linear.easeIn});
 	}
-
-
-	// function frame5()
-	// {
-	// 	TweenLite.to(containers, 0.2, {opacity:0});
-	// 	TweenLite.to(end_frame_heart, 0.5, {scaleX:1, scaleY:1, delay: 0.6, ease: Quad.easeOut});
-	// 	TweenLite.to(together_end_frame, 0.5, {delay: 0.9, opacity:1});
-	// 	TweenLite.to(learn_more, 0.5, {delay: 1, opacity:1});
-	// 	TweenLite.to(logo, 0.5, {delay: 1.3, opacity:1});
-	// 	TweenLite.to(tag, 0.5, {delay: 1.4, opacity:1});
-	// }
 
 
 

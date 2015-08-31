@@ -34,12 +34,20 @@ overflow:hidden;
 	height: 90px;
 	width: 258px;
 	position: absolute;
-	top:70px;
-	left:21px;
+	top:67px;
+	left:0px;
 	color: #fff;
 	text-align: center;
 
 }
+
+
+#tweet{
+
+	left:22px !important;
+}
+
+
 #tweet, div#heros, p#hashtag{
 	display: none;
 	position: absolute;
@@ -51,17 +59,19 @@ overflow:hidden;
 }
 #prize{
 	position: absolute;
-	top:63px;
-    left: 21px;
-    width: 215px;
-    font-size: 24px;
+    top: 100px;
+    left: 0px;
+    width: 255px;
+    font-size: 17px;
     font-family: 'Open Sans';
+    opacity: 0;
 }
 
 div#wave{
 	position: absolute;
 	bottom: 0;
-	left: 0
+	left: 0;
+	z-index:20000;
 }
 div#wave img{
 	display: block;
@@ -96,8 +106,8 @@ p#hashtag{
 	left: 5px;
 }
 div#finalFrame{
-	background: url('../images/finalbg.jpg');
 	text-align: center;
+	background-color: #17669e;
 	color: #fff;
 	z-index: 100;
 	width: 300px;

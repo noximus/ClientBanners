@@ -9,18 +9,22 @@
 	<div id="learnMore"><a href="#"><img src="images/learnMore.png"><img src="images/arrow.png" width="18" height="18"></a></div>
 	<div id="enter">
 		<p id="enterFor"><img src="images/EnterForWin.png"></p>
-		<p id="prize">xxxxxxxxxxxxxxxxxxxxxx</p>
 	</div>
+	<div id="wave"><img src="images/wave1.png" width="163" height="93"></div>
+
+<div id="prize"><img src="images/home_tag.png" width="300" height="53"></div>
+
 	<div id="tweet">
 		<p id='tweet1'><img src="images/tweetPic.png"></p>
 	</div>
 	<div id="heroFrame">
 		<p id="noPurch"><img src="images/nopurchase.png"></p>
 		<p id="hashtag"><img src="images/usingSweep.png"></p>
+		</div>
 	<div id="heros">
 		<img src="images/heros.jpg" height="250" width="300">
 	</div>
-	<div id="wave"><img src="images/wave1.png" width="163" height="93"></div>
+	
 	<div id="logo"><img src="images/DestinyLogo.png"></div>
 	<div id="finalFrame">
 		<h4 class='finaltxt'><img src="images/hashBundle.png"></h4>
@@ -34,19 +38,14 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenLite.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
 <script type="text/javascript" src="http://cdn.flashtalking.com/frameworks/js/api/2/8/html5API.js"></script>
-<script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
+<script type="text/javascript" src="manifest.js"></script>
+
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query("#container"),
-	dynamicText = FT.query("#prize")
+	container = FT.query(".container")
 
-	// Populate instantAd components
-	myFT.addEventListener("instantads", function(){
-		dynamicText.innerHTML = myFT.instantAds.textVar;
-		
-	});
 
 	// Apply clickTags
 	myFT.applyClickTag(container, 1);
