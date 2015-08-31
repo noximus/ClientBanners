@@ -70,7 +70,8 @@ overflow:hidden;
 div#wave{
 	position: absolute;
 	bottom: 0;
-	left: 0
+	left: 0;
+	z-index:20000;
 }
 div#wave img{
 	display: block;
@@ -105,8 +106,8 @@ p#hashtag{
 	left: 5px;
 }
 div#finalFrame{
-	background: url('../images/finalbg.jpg');
 	text-align: center;
+	background-color: #17669e;
 	color: #fff;
 	z-index: 100;
 	width: 300px;

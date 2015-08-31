@@ -94,7 +94,7 @@ home_animation = (function() {
 		// TweenLite.to(heroFrame, 1, {display: 'none', ease: Linear.easeOut})
 		TweenLite.to(finalFrame, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(finaltxt, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(ps4logo, 0.5, {delay: .5, opacity: 1, display:'block', ease: Linear.easeIn});
+		// TweenLite.to(ps4logo, 0.5, {delay: .5, opacity: 1, display:'block', ease: Linear.easeIn});
 		TweenLite.to(lrnBtn, 0.5, {delay: 2.5, opacity: 1, display:'block', ease: Linear.easeIn});
 	}
 

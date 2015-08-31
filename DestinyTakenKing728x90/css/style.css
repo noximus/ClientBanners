@@ -65,7 +65,8 @@ img#hashtag{
 }
 
 div#finalFrame{
-	background: url('../images/frame4bg.jpg');
+	text-align: center;
+	background-color: #17669e;
 	width: 728px;
 	height: 90px;
 	z-index: 100;
