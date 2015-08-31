@@ -42,7 +42,8 @@ div#tweet{
 div#wave{
 	position: absolute;
 	bottom: 0;
-	left: 0
+	left: 0;
+	z-index: 200000;
 }
 div#wave img{
 	display: block;
@@ -64,7 +65,8 @@ img#hashtag{
 }
 
 div#finalFrame{
-	background: url('../images/frame4bg.jpg');
+	text-align: center;
+	background-color: #17669e;
 	width: 970px;
 	height: 66px;
 	z-index: 100;
