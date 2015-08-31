@@ -76,11 +76,11 @@ home_animation = (function() {
 	function frame4()
 	{
 		TweenLite.to(heroFrame, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(wave, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+		// TweenLite.to(wave, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(logo, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(learnMore, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(finalFrame, .5, {delay: 1, opacity: 1, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(ps4logo, .5, {delay: 1.5, opacity:1, display: 'block', ease:Linear.easeIn});
+		// TweenLite.to(ps4logo, .5, {delay: 1.5, opacity:1, display: 'block', ease:Linear.easeIn});
 		TweenLite.to(greatness, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
 		TweenLite.to(bundlesweeps, .5, {delay:2.5, opacity:1, display: 'block', ease:Linear.easeIn});
 		TweenLite.to(lrnBtn, 0.5, {delay: 3, opacity: 1, display:'block', ease: Linear.easeIn});
