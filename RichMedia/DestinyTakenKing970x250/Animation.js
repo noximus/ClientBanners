@@ -32,14 +32,6 @@ home_animation = (function() {
 	{
 		frame1();
 	}
-	window.onload = function() {
-	  if (Manifest.isInitialized()) {
-	    manifestInitHandler();
-	  } else {
-	     Manifest.addEventListener(studio.events.StudioEvent.INIT,
-		manifestInitHandler);
-	  }
-	}
 
 	function enablerInitHandler() {
 	  home_animation();

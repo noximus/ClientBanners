@@ -96,17 +96,32 @@ img#bundlesweeps{
 	display: none;
 	position: absolute;
 }
+#containerExWrap{
+	position: absolute;
+	width:970px;
+	height:418px;
+	overflow:hidden;
+	cursor: pointer;
+	left:0px;
+	z-index: 3000000;
+
+}
 .containerEx {
 	display: none;
 	position: absolute;
 	width:300px;
 	height:418px;
 	background: url('../images/starbgEx.jpg');	
-	overflow:hidden;
 	cursor: pointer;
 	left:670px;
 	z-index: 3000000;
 	
+}
+#vidHolder{
+	width: 670px;
+	height: 418px;
+	left:-670px;
+	position: absolute;
 }
 
 #learnMoreEx{

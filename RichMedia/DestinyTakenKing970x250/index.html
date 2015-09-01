@@ -5,7 +5,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<div id="container">
 	<div id="learnMore"><a href="#"><img src="images/learnMore.png"><img src="images/arrow.png"></a></div>
 	<div id="enter">
 		<p id="enterFor"><img src="images/EnterForWin.png"></p>
@@ -33,23 +33,33 @@
 		<h4 class='bundle'><img src="images/hashBundle.png"></h4>
 		<h3 class='finaltxt'><img src="images/extrodinaryGreat.png"></h3>
 	</div>
+	<div id="vidHolder"></div>
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/plugins/CSSPlugin.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenLite.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
-<script type="text/javascript" src="http://cdn.flashtalking.com/frameworks/js/api/2/8/html5API.js"></script>
-<script type="text/javascript" src="Animation.js"></script>
+<script src="http://cdn.flashtalking.com/frameworks/js/api/2/8/html5API.js"></script>
 <script type="text/javascript" src="manifest.js"></script>
-
+<script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
 	var myFT = new FT,
-	// Declare HTML elements
-	container = FT.query(".container")
-
-
-	// Apply clickTags
+	container = FT.query("#container"),
+	vidHolder = FT.query("#vidHolder");
 	myFT.applyClickTag(container, 1);
+
+	var vid = myFT.insertVideo({
+		parent: vidHolder,
+		video: "video1",
+		controls: true,
+		autoplay: true,
+			width: "445",
+		height: "250"
+	});
+
+	myFT.addEventListener("instantads", function(){
+		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
+	});
 
 </script>
 </body>
