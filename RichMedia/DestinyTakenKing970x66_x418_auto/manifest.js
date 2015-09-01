@@ -1,7 +1,7 @@
 FT.manifest({
 	"filename":"index.html",
 	"width":970,
-	"height":66,
+	"height":418,
   "clickTagCount":1,
   "expand":{
     "fullscreen":false,

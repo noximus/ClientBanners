@@ -102,20 +102,21 @@
 				unexpanded.style.display = "none";
 				expanded.style.display = "block";
 				myFT.expand();
+				console.log('expand');
 			},
 			contract = function(e){
 				expanded.style.display = "none";
 				unexpanded.style.display = "block";
 				if(e && e.type) {
-                	myFT.contract();
-                }
+        	myFT.contract();
+        }
 			};
 			myFT.addEventListener('contract', contract);
-
+			
 			myFT.applyButton(unexpanded, expand);
 			myFT.applyClickTag(expanded);
 			myFT.applyButton(close, function(){myFT.contract()});
-
+			setTimeout(function(){ myFT.expand(); }, 1000);
 </script>
 </body>
 </html>
