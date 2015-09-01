@@ -1,6 +1,6 @@
 FT.manifest({
 	"filename":"index.html",
 	"width":970,
-	"height":250,
-	"clickTagCount":1
+	"height":66,
+  "clickTagCount":1
 });
