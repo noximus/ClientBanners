@@ -51,6 +51,7 @@ home_animation = (function() {
 		var bundlesweeps = document.getElementById("bundlesweeps");
 
 		var containerEx = document.getElementById("containerEx");
+		var bloodEx = document.getElementById("bloodEx");
 		var enterForEx = document.getElementById("enterForEx");
 		var prizeEx = document.getElementById("prizeEx");
 		var tweetEx = document.getElementById("tweetEx");
@@ -133,7 +134,7 @@ home_animation = (function() {
 	function frame4Ex()
 	{
 		TweenLite.to(heroFrameEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		// TweenLite.to(wave, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+		TweenLite.to(bloodEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(logoEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		// TweenLite.to(learnMoreEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(finalFrameEx, .5, {delay: 1, opacity: 1, display: 'block', ease: Linear.easeIn});
