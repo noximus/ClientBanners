@@ -1,32 +1,32 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.container {
+.containerEx {
 position: absolute;
 width:970px;
 height:66px;
-background: url('../images/starbg.jpg');	
+background: url('../images/starbgEx.jpg');	
 overflow:hidden;
 cursor: pointer;
 	
 }
 
-#learnMore{
+#learnMoreEx{
 	position: absolute;
 	right: 0px;
 	top: 3px;
 	z-index: 100;
 }
-#learnMore a{
+#learnMoreEx a{
 	display: block;
 }
-img#enterFor{
+img#enterForEx{
 	position: absolute;
 	top: 5px;
   left: 200px;
 }
 
-#prize{
+#prizeEx{
 	color: white;
     width: 531px;
     position: absolute;
@@ -34,44 +34,44 @@ img#enterFor{
     top: 35px;
     font-size: 22px;
 }
-div#tweet{
+div#tweetEx{
 	position: absolute;
 	right: 250px;
 }
 
-div#wave{
+div#waveEx{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index: 200000;
 }
-div#wave img{
+div#waveEx img{
 	display: block;
 }
-div#logo{
+div#logoEx{
 	position: absolute;
 	bottom: -3px;
 	right: 6px;
 }
-div#heros{
+div#herosEx{
 	top: 0;
 }
 div#heros img{
 	opacity: 0;
 }
-img#hashtag{
+img#hashtagEx{
 	top: 5px;
 	right: 250px;
 }
 
-div#finalFrame{
+div#finalFrameEx{
 	text-align: center;
 	background-color: #17669e;
 	width: 970px;
 	height: 66px;
 	z-index: 100;
 }
-img#greatness{
+img#greatnessEx{
 	top: 7px;
 	right: 245px;
 }
@@ -79,20 +79,20 @@ img#ps4logo{
 	bottom: 6px;
     left: 9px;
 }
-img#bundlesweeps{
+img#bundlesweepsEx{
 	right: 5px;
 	top: 8px;
 }
-#lrnBtn{
+#lrnBtnEx{
 	top: 28px;
 	position: absolute;
 	right: 6px;
 	display: none;
 }
-#enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{
+#enterForEx, #prizeEx, #tweetEx, #herosbgEx, #hashtagEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #finalFrameEx, #bundlesweepsEx{
 	opacity: 0;
 }
-#tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness, #ps4logo, #bundlesweeps{
+#tweetEx,div#heroFrameEx, img#hashtagEx,div#finalFrameEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #bundlesweepsEx{
 	display: none;
 	position: absolute;
 }
