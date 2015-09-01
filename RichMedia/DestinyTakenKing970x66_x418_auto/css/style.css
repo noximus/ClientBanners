@@ -23,15 +23,15 @@ cursor: pointer;
 img#enterFor{
 	position: absolute;
 	top: 5px;
-    right: 123px;
+  left: 200px;
 }
 
 #prize{
 	color: white;
     width: 531px;
     position: absolute;
-    right: 121px;
-    top: 37px;
+    right: 85px;
+    top: 35px;
     font-size: 22px;
 }
 div#tweet{
