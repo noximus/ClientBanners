@@ -7,7 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<div class="container" id="container">
 	<div id="learnMore">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -35,7 +35,7 @@
 		<img src="images/greatness.png" id="greatness">
 		<img src="images/bundlesweeps.png" id='bundlesweeps'>
 		<a href="#" id="lrnBtn">
-			<img src="images/learnBtn.png" >
+			<img src="images/clickToBtnEx.png" >
 		</a>
 	</div> 
 	<div id="wave">
@@ -45,6 +45,47 @@
 		<img src="images/destinylogo.png">
 	</div>
 </div>
+<div class="containerEx" id="containerEx">
+	<div id="learnMoreEx">
+		<a href="#">
+			<img src="images/learnMore.png">
+		</a>
+	</div>
+	<div id="enterEx">
+		<img src="images/enterEx.png" id="enterForEx">	
+	</div>
+	
+	<div id="prizeEx"><img src="images/home_tagEx.png"></div>
+
+
+	 <div id="tweetEx">
+		<img src="images/tweetEx.png">
+	</div>
+	<div id="heroFrameEx">
+		<div id="herosEx">
+			<img src="images/herosbgEx.jpg" id='herosbgEx'>
+		</div>
+		<img src="images/hashtagEx.png" id="hashtagEx">
+		
+	</div>
+	<div id="finalFrameEx">
+		<img src="images/ps4logoEx.png" id='ps4logoEx'>
+		<img src="images/greatnessEx.png" id="greatnessEx">
+		<img src="images/bundlesweeps.png" id='bundlesweepsEx'>
+		<a href="#" id="lrnBtnEx">
+			<img src="images/learnBtn.png" >
+		</a>
+	</div> 
+	<div id="waveEx">
+		<img src="images/wave1Ex.png">
+	</div>
+	<div id="bloodEx">
+		<img src="images/ESRB.png">
+	</div>
+	<div id="logoEx">
+		<img src="images/destinylogoEx.png">
+	</div>
+</div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/plugins/CSSPlugin.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenLite.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
@@ -52,12 +93,31 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
-	var myFT = new FT,
-	// Declare HTML elements
-	container = FT.query(".container")
 
-	// Apply clickTags
-	myFT.applyClickTag(container, 1);
+	var myFT = new FT,
+			unexpanded = FT.query("#container"),
+			expanded = FT.query("#containerEx"),
+			close = FT.query(".containerEx"),
+			expand = function(){
+				// console.log('expand');
+				unexpanded.style.display = "none";
+				expanded.style.display = "block";
+				myFT.expand();
+				frame1Ex();
+
+			},
+			contract = function(e){
+				expanded.style.display = "none";
+				unexpanded.style.display = "block";
+				if(e && e.type) {
+                	myFT.contract();
+                }
+			};
+			myFT.addEventListener('contract', contract);
+
+			myFT.applyButton(unexpanded, expand);
+			myFT.applyClickTag(expanded);
+			myFT.applyButton(close, function(){myFT.contract()});
 
 </script>
 </body>
