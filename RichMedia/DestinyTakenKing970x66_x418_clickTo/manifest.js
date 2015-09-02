@@ -15,4 +15,3 @@ FT.manifest({
   "instantAds":[
   {"name":"video1", "type":"text", "default":"https://www.youtube.com/watch?v=VFh5ArG46_M"}]
 });
-});

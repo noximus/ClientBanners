@@ -111,7 +111,7 @@ home_animation = (function() {
 		TweenLite.to(containerEx, .5, {opacity:1, display: 'block', ease:Linear.easeInOut});
 		TweenLite.to(enterForEx, 1, {delay: .3, opacity: 1, ease: Linear.eastOut});
 		TweenLite.to(prizeEx, 1, {delay:.7, opacity: 1, ease: Linear.eastOut});
-		// TweenLite.delayedCall(4, frame2Ex);
+		TweenLite.delayedCall(4, frame2Ex);
 	}
 	
 	function frame2Ex()

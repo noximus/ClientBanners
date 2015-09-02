@@ -98,7 +98,6 @@
 	var myFT = new FT,
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
-	close = FT.query(".containerEx"),
 	vidHolder = FT.query("#vidHolder"),
 	expand = function(){
 		unexpanded.style.display = "none";
@@ -117,15 +116,15 @@
 		parent: vidHolder,
 		video: "video1",
 		controls: true,
-		autoplay: true,
-			width: "445",
-		height: "250"
+		autoplay: false,
+			width: "670",
+		height: "418"
 	});
 	myFT.addEventListener('contract', contract);
 
 	myFT.applyButton(unexpanded, expand);
 	myFT.applyClickTag(expanded);
-	myFT.applyButton(close, function(){myFT.contract()});
+	// myFT.applyButton(close, function(){myFT.contract()});
 
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
