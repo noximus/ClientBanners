@@ -22,16 +22,16 @@ cursor: pointer;
 }
 img#enterFor{
 	position: absolute;
-	top: 20px;
-    right: 123px;
+	top: 0px;
+   right: 163px;
 }
 
 #prize{
 	color: white;
     width: 531px;
     position: absolute;
-    right: 11px;
-    top: 42px;
+    right: 31px;
+    top: 59px;
     font-size: 22px;
 }
 div#tweet{
