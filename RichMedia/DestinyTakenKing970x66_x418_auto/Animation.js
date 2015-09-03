@@ -30,7 +30,7 @@ home_animation = (function() {
 	}
 	function init()
 	{
-		frame1();	
+		frame1Ex();	
 	}
 		// vars	
 		var container = document.getElementById("container");

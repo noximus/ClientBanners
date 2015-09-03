@@ -109,12 +109,12 @@ p#noPurch{
 }
 p#hashtag{
 	z-index: 100;
-	top: 73px;
+	top: 83px;
 	font-size: 18px;
 	color: #fff;
 	opacity: 0;
 	text-align: center;
-	left: 65px;
+	left: 74px;
 }
 div#finalFrame{
 	text-align: center;
