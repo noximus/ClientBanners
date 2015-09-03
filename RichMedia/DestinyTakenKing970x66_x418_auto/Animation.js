@@ -72,7 +72,7 @@ home_animation = (function() {
 	{
 		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
 		TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.delayedCall(1, frame4);
+		TweenLite.delayedCall(4, frame2);
 	}
 	
 	function frame2()
@@ -107,6 +107,8 @@ home_animation = (function() {
 	}
 	function frame1Ex()
 	{
+		// vid.mute();
+		// vid.play();
 		TweenLite.to(container, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
 		TweenLite.to(containerEx, .5, {opacity:1, display: 'block', ease:Linear.easeInOut});
 		TweenLite.to(enterForEx, 1, {delay: .3, opacity: 1, ease: Linear.eastOut});
