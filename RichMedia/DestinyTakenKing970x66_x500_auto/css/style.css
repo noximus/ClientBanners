@@ -99,7 +99,7 @@ img#bundlesweeps{
 #containerExWrap{
 	position: absolute;
 	width:970px;
-	height:418px;
+	height:500px;
 	overflow:hidden;
 	cursor: pointer;
 	left:0px;
@@ -110,7 +110,7 @@ img#bundlesweeps{
 	display: none;
 	position: absolute;
 	width:300px;
-	height:418px;
+	height:500px;
 	background: url('../images/starbgEx.jpg');	
 	cursor: pointer;
 	left:670px;
@@ -119,7 +119,7 @@ img#bundlesweeps{
 }
 #vidHolder{
 	width: 670px;
-	height: 418px;
+	height: 500px;
 	left:-670px;
 	position: absolute;
 }
@@ -135,21 +135,21 @@ img#bundlesweeps{
 }
 img#enterForEx{
 	position: absolute;
-	top: 145px;
-  left: 20px;
+	top: 115px;
+  left: 0px;
 }
 
 #prizeEx{
 	color: white;
     width: 531px;
     position: absolute;
-    left: 20px;
-    top: 222px;
+    left: 0px;
+    top: 288px;
     font-size: 22px;
 }
 div#tweetEx{
 	position: absolute;
-	top:145px;
+	top:185px;
 	left: 20px;
 }
 
@@ -181,18 +181,18 @@ div#heros img{
 	opacity: 0;
 }
 img#hashtagEx{
-	top: 182px;
+	top: 212px;
 }
 
 div#finalFrameEx{
 	text-align: center;
 	background-color: #17669e;
 	width: 300px;
-	height: 418px;
+	height: 500px;
 	z-index: 100;
 }
 img#greatnessEx{
-	top: 165px;
+	top: 200px;
 	left: 45px;
 }
 img#ps4logo{
@@ -201,7 +201,7 @@ img#ps4logo{
 }
 img#bundlesweepsEx{
 	left: 65px;
-	top: 100px;
+	top: 162px;
 }
 #lrnBtnEx{
 	top: 28px;
@@ -215,4 +215,17 @@ img#bundlesweepsEx{
 #tweetEx,div#heroFrameEx, img#hashtagEx,div#finalFrameEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #bundlesweepsEx{
 	display: none;
 	position: absolute;
+}
+#lrnBtnEx2{
+	color: #fff;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background: url('../images/btnBgEx.svg');
+	font-size: 12px;
+	top:310px;
+	left: 88px;
+	border: none;
+	padding: 10px 23px 15px 23px;
+	cursor: pointer;
 }

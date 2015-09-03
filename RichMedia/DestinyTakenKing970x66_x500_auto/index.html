@@ -76,6 +76,8 @@
 		<a href="#" id="lrnBtnEx">
 			<img src="images/learnBtn.png" >
 		</a>
+		<button id='lrnBtnEx2'>LEARN MORE</button>
+
 	</div> 
 	<div id="waveEx">
 		<img src="images/wave1Ex.png">
@@ -105,11 +107,23 @@
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
 		myFT.expand();
+		// vid.unmute();
+		// vid.video.play();
 		console.log('expand');
+	},
+	onAutoExpand = function(){
+		unexpanded.style.display = "none";
+		expanded.style.display = "block";
+		myFT.expand();
+		// vid.mute();
+		// vid.video.play();
 	},
 	contract = function(e){
 		expanded.style.display = "none";
 		unexpanded.style.display = "block";
+		// vid.video.pause();
+		home_animation2();
+		unexpanded.style.opacity = "1";
 		if(e && e.type) {
     	myFT.contract();
     }
@@ -118,20 +132,23 @@
 		parent: vidHolder,
 		video: "video1",
 		controls: true,
-		autoplay: true,
 		width: "670",
-		height: "418"
+		height: "500"
 	});
+
 	// vid.video.muted = true;
 	myFT.addEventListener('contract', contract);
 	
 	myFT.applyButton(unexpanded, expand);
 	myFT.applyClickTag(expanded);
 	// myFT.applyButton(close, function(){myFT.contract()});
-	setTimeout(function(){ myFT.expand(); }, 1000);
+	// setTimeout(function(){ myFT.expand(); }, 15000);
+	setTimeout(onAutoExpand, 0);
+	setTimeout(contract, 15000);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});
+
 </script>
 </body>
 </html>
