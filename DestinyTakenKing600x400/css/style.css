@@ -3,8 +3,8 @@
 
 .container {
 position: absolute;
-width:300px;
-height:600px;
+width:600px;
+height:400px;
 background: url('../images/starbg.jpg');	
 overflow:hidden;
 	font-family: 'Open Sans';
@@ -13,8 +13,8 @@ overflow:hidden;
 
 #learnMore{
 	position: absolute;
-	right: 21px;
-    top: 32px;
+	right: 7px;
+  bottom: 7px;
 	height: 20px;
 	width: 110px;
 	z-index: 100;
@@ -30,17 +30,26 @@ overflow:hidden;
 	text-decoration: none;
 	display: block;
 }
-#enter, #tweet{
+#enter{
 	height: 90px;
 	width: 258px;
 	position: absolute;
-	top:167px;
-	left:0px;
+	top:130px;
+	left:55px;
 	color: #fff;
 	text-align: center;
 
 }
+#tweet{
+	height: 90px;
+	width: 258px;
+	position: absolute;
+	top:75px;
+	left:65px;
+	color: #fff;
+	text-align: center;
 
+}
 #concole {
 
 position: absolute;
@@ -53,22 +62,15 @@ opacity: 0;
 
 #finalhash {
 	position: absolute;
-	top: 34px;
-    left: 20px;
+	top: 50px;
+  left: 200px;
 	
 }
 
-
-#tweet{
-	top:147px !important;
-	left:0px !important;
-}
-
-
 #rate {
 	position: absolute;
-	top:26px;
-	left:15px;
+	top:10px;
+	left:10px;
 	z-index: 1;
 }
 
@@ -83,8 +85,8 @@ opacity: 0;
 }
 #prize{
 	position: absolute;
-    top: 254px;
-    left: 0px;
+    top: 228px;
+    left: 55px;
     width: 255px;
     font-size: 17px;
     font-family: 'Open Sans';
@@ -102,8 +104,8 @@ div#wave img{
 }
 div#logo{
 	position: absolute;
-	bottom: 2px;
-    right: 12px;
+	top: 17px;
+    right: 17px;
 }
 div#heros{
 	top: 0;
@@ -122,20 +124,20 @@ p#noPurch{
 }
 p#hashtag{
 	z-index: 100;
-	top: 238px;
+	top: 131px;
 	font-size: 18px;
 	color: #fff;
 	opacity: 0;
 	text-align: center;
-	left: 0px;
+	left: 40px;
 }
 #finalFrame{
 	text-align: center;
 	background-color: #17669e;
 	color: #fff;
 	z-index: 100;
-	width: 300px;
-	height: 600px;
+	width: 600px;
+	height: 400px;
 	display: none;
 	position: absolute;
 	margin: 0;
@@ -146,7 +148,7 @@ p#hashtag{
 	opacity: 0;
 	display: none;
 	margin: 0;
-	margin-top: 204px;
+	margin-top: 160px;
 }
 h4.finaltxt{
 	margin: 15px;
@@ -165,12 +167,13 @@ h1.finaltxt{
 	position: absolute;
 	background: url('../images/learn_more.png');
 	font-size: 12px;
-	left: 88px;
+	top: 265px;
+	left: 220px;
 	border: none;
 	padding: 10px 23px;
 	cursor: pointer;
 	width: 144px;
-    height: 48px;
+  height: 48px;
 }
 #great{
 	letter-spacing: 2px;

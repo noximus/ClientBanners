@@ -53,7 +53,7 @@ home_animation = (function() {
 	{
 		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
 		TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
-		// TweenLite.delayedCall(4, frame2);
+		TweenLite.delayedCall(4, frame2);
 	}
 	
 	function frame2()

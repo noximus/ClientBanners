@@ -1,20 +1,25 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.container {
-position: absolute;
-width:300px;
-height:250px;
-background: url('../images/starbg.jpg');	
-overflow:hidden;
+#container {
+	position: absolute;
+	width:970px;
+	height:250px;
+	background: url('../images/starbg.jpg');	
+	overflow:hidden;
 	font-family: 'Open Sans';
 	cursor: pointer;
 }
-
+#vidHolder{
+	width: 445px;
+	height: 250px;
+	left:525px;
+	position: absolute;
+}
 #learnMore{
 	position: absolute;
 	right: 10px;
-	top: 10px;
+	bottom: 10px;
 	height: 20px;
 	width: 110px;
 	z-index: 100;
@@ -31,11 +36,11 @@ overflow:hidden;
 	display: block;
 }
 #enter, #tweet{
-	height: 90px;
-	width: 258px;
+	height: 84px;
+	width: 647px;
 	position: absolute;
 	top:67px;
-	left:0px;
+	left:170px;
 	color: #fff;
 	text-align: center;
 
@@ -43,8 +48,8 @@ overflow:hidden;
 
 
 #tweet{
-
-	left:22px !important;
+	top:57px;
+	left:160px !important;
 }
 
 
@@ -59,12 +64,12 @@ overflow:hidden;
 }
 #prize{
 	position: absolute;
-    top: 119px;
-    left: 0px;
-    width: 255px;
-    font-size: 17px;
-    font-family: 'Open Sans';
-    opacity: 0;
+  top: 151px;
+  left: 170px;
+  width: 255px;
+  font-size: 17px;
+  font-family: 'Open Sans';
+  opacity: 0;
 }
 
 div#wave{
@@ -73,13 +78,19 @@ div#wave{
 	left: 0;
 	z-index:20000;
 }
+div#blood{
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	z-index:20000;
+}
 div#wave img{
 	display: block;
 }
 div#logo{
 	position: absolute;
-	bottom: 2px;
-    right: 12px;
+	top: 10px;
+  right: 10px;
 }
 div#heros{
 	top: 0;
@@ -90,27 +101,27 @@ div#heros img{
 p#noPurch{
 	font-size: 8px;
 	position: absolute;
-	top: -1px;
-    left: 5px;
+	top: 4px;
+    left: 350px;
 	color: #fff;
 	display: none;
 	z-index: 100;
 }
 p#hashtag{
 	z-index: 100;
-	top: 73px;
+	top: 63px;
 	font-size: 18px;
 	color: #fff;
 	opacity: 0;
 	text-align: center;
-	left: 5px;
+	left: 183px;
 }
 div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
 	color: #fff;
 	z-index: 100;
-	width: 300px;
+	width: 970px;
 	height: 250px;
 	display: none;
 	position: absolute;
@@ -122,6 +133,17 @@ div#finalFrame{
 	opacity: 0;
 	display: none;
 	margin: 0;
+	top: 10px;
+}
+.finaltxt img{
+	top: 60px;
+	left: 145px;
+	position: absolute;
+}
+#learnMore2{
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 h4.finaltxt{
 	margin: 15px;
@@ -132,6 +154,11 @@ h3.finaltxt{
 h1.finaltxt{
 	font-size: 35px;
 }
+.bundle img{
+	position: absolute;
+	bottom:10px !important;
+	right:10px !important;
+}
 #lrnBtn{
 	color: #fff;
 	opacity: 0;
@@ -139,7 +166,8 @@ h1.finaltxt{
 	position: absolute;
 	background: url('../images/btnBg.svg');
 	font-size: 12px;
-	left: 88px;
+	left: 435px;
+	top: 170px;
 	border: none;
 	padding: 10px 23px 15px 23px;
 	cursor: pointer;
