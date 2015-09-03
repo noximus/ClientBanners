@@ -61,7 +61,7 @@ home_animation = (function() {
 		TweenLite.to(prize, 0.4, {opacity: 0, ease: Linear.eastOut});
 		TweenLite.to(enter, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
 		TweenLite.to(tweet, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
-		TweenLite.delayedCall(4, frame3);
+		// TweenLite.delayedCall(4, frame3);
 	}
 	
 	function frame3()
