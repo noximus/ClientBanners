@@ -76,6 +76,8 @@
 		<a href="#" id="lrnBtnEx">
 			<img src="images/learnBtn.png" >
 		</a>
+		<button id='lrnBtnEx2'>LEARN MORE</button>
+
 	</div> 
 	<div id="waveEx">
 		<img src="images/wave1Ex.png">
@@ -120,6 +122,9 @@
 		expanded.style.display = "none";
 		unexpanded.style.display = "block";
 		// vid.video.pause();
+		
+		unexpanded.style.opacity = "1";
+		home_animation2();
 		if(e && e.type) {
     	myFT.contract();
     }
@@ -139,8 +144,8 @@
 	myFT.applyClickTag(expanded);
 	// myFT.applyButton(close, function(){myFT.contract()});
 	// setTimeout(function(){ myFT.expand(); }, 15000);
-	setTimeout(onAutoExpand, 500);
-	// setTimeout(contract, 15000);
+	setTimeout(onAutoExpand, 0);
+	setTimeout(contract, 15000);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});

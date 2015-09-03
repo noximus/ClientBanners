@@ -135,16 +135,16 @@ img#bundlesweeps{
 }
 img#enterForEx{
 	position: absolute;
-	top: 145px;
-  left: 20px;
+	top: 75px;
+  left: 0px;
 }
 
 #prizeEx{
 	color: white;
     width: 531px;
     position: absolute;
-    left: 20px;
-    top: 222px;
+    left: 0px;
+    top: 248px;
     font-size: 22px;
 }
 div#tweetEx{
@@ -181,7 +181,7 @@ div#heros img{
 	opacity: 0;
 }
 img#hashtagEx{
-	top: 182px;
+	top: 202px;
 }
 
 div#finalFrameEx{
@@ -215,4 +215,17 @@ img#bundlesweepsEx{
 #tweetEx,div#heroFrameEx, img#hashtagEx,div#finalFrameEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #bundlesweepsEx{
 	display: none;
 	position: absolute;
+}
+#lrnBtnEx2{
+	color: #fff;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background: url('../images/btnBgEx.svg');
+	font-size: 12px;
+	top:280px;
+	left: 88px;
+	border: none;
+	padding: 10px 23px 15px 23px;
+	cursor: pointer;
 }
