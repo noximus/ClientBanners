@@ -11,9 +11,9 @@
 		<p id="enterFor"><img src="images/EnterForWin.png"></p>
 	</div>
 
-<div id="rate"><img src="images/rating.jpg" width="134" height="58"></div>
+<div id="rate"><img src="images/rating.jpg"></div>
 
-<div id="prize"><img src="images/home_tag.png" width="300" height="53"></div>
+<div id="prize"><img src="images/home_tag.png"></div>
 
 	<div id="tweet">
 		<p id='tweet1'><img src="images/tweetPic.png"></p>
@@ -22,20 +22,20 @@
 		<p id="noPurch"><img src="images/nopurchase.png"></p>
 		<p id="hashtag"><img src="images/usingSweep.png"></p>
 	<div id="heros">
-		<img src="images/heros.jpg" height="600" width="300">
+		<img src="images/heros.jpg">
 	</div>
-	<div id="wave"><img src="images/wave1.png" width="163" height="93"></div>
+	<div id="wave"><img src="images/wave1.png"></div>
 	<div id="logo"><img src="images/DestinyLogo.png"></div>
 	
 	
-	<div id="concole"><img src="images/concole.png" width="196" height="155"></div>	
+	<div id="concole"><img src="images/concole.png"></div>	
 
 
 	<div id="finalFrame">
 		<div id='finalhash'><img src="images/hashBundle.png"></div>
 		<h3 class='finaltxt'><img src="images/extrodinaryGreat.png"></h3>
 		<button id='lrnBtn'></button>
-		<img id='ps4logo' src="images/ps4logo.png" width="104" height="33">
+		<img id='ps4logo' src="images/ps4logo.png">
 	</div>
 </div>
 
@@ -49,14 +49,9 @@
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query(".container"),
-	dynamicText = FT.query("#prize")
+	container = FT.query(".container")
 
 	// Populate instantAd components
-	myFT.addEventListener("instantads", function(){
-		dynamicText.innerHTML = myFT.instantAds.textVar;
-		
-	});
 
 	// Apply clickTags
 	myFT.applyClickTag(container, 1);

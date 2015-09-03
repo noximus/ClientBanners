@@ -83,7 +83,7 @@ opacity: 0;
 }
 #prize{
 	position: absolute;
-    top: 254px;
+    top: 340px;
     left: 0px;
     width: 255px;
     font-size: 17px;
@@ -166,6 +166,7 @@ h1.finaltxt{
 	background: url('../images/learn_more.png');
 	font-size: 12px;
 	left: 82px;
+	top: 330px;
 	border: none;
 	padding: 10px 23px;
 	cursor: pointer;
