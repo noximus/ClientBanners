@@ -13,11 +13,21 @@ cursor: pointer;
 
 #learnMore{
 	position: absolute;
-	right: 0px;
-	top: 66px;
+	right: 4px;
+	top: 62px;
+	height: 20px;
+	width: 110px;
 	z-index: 100;
 }
 #learnMore a{
+	font-family: NeuzeitGro;
+	color:  #ffffff;
+	font-size: 13px;
+	font-family: 'Open Sans';
+	line-height: 15.6px;
+	text-align: right;
+	text-shadow: 0px 1px 4px rgba(19, 36, 91, 0.59);
+	text-decoration: none;
 	display: block;
 }
 img#enterFor{
@@ -61,10 +71,18 @@ div#heros img{
 	opacity: 0;
 }
 img#hashtag{
-	top: 27px;
-	right: 180px;
+	top: 29px;
+	right: 168px;
 }
-
+p#noPurch{
+	font-size: 8px;
+	position: absolute;
+	top: 57px;
+  left: 244px;
+	color: #fff;
+	display: none;
+	z-index: 100;
+}
 div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
@@ -96,4 +114,17 @@ img#bundlesweeps{
 #tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness, #ps4logo, #bundlesweeps{
 	display: none;
 	position: absolute;
+}
+#lrnBtn{
+	color: #fff;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background: url('../images/btnBg.svg');
+	font-size: 12px;
+	top: 51px;
+	right: 2px;
+	border: none;
+	padding: 10px 23px 15px 23px;
+	cursor: pointer;
 }
