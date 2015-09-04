@@ -47,6 +47,9 @@
 </div>
 <div id="containerExWrap">
 <div class="containerEx" id="containerEx">
+
+<div id="close"><img src="images/close.png"></div>
+
 	<div id="learnMoreEx">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -76,7 +79,6 @@
 		<a href="#" id="lrnBtnEx">
 			<img src="images/learnBtn.png" >
 		</a>
-		<button id='lrnBtnEx2'>LEARN MORE</button>
 	</div> 
 	<div id="waveEx">
 		<img src="images/wave1Ex.png">
@@ -97,6 +99,7 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
+
 function isPlaying(){
 		console.log("it's playing");
 	};
@@ -105,6 +108,7 @@ function isPlaying(){
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
 	vidHolder = FT.query("#vidHolder"),
+	close = FT.query("#close"),
 	vid = myFT.insertVideo({
 		parent: vidHolder,
 		video: "video1",
@@ -140,12 +144,13 @@ function isPlaying(){
 		unexpanded.style.display = "block";
 		// vid.video.pause();
 		//if(e && e.type) {
+			alert(hello);
     	myFT.contract();
     	vid.pause();
     //}
 	};
 	
-	
+	myFT.applyButton(close, function(){myFT.contract()});
 	
 	
 
@@ -157,7 +162,7 @@ function isPlaying(){
 	// myFT.applyButton(close, function(){myFT.contract()});
 	// setTimeout(function(){ myFT.expand(); }, 15000);
 	setTimeout(onAutoExpand, 500);
-	setTimeout(contract, 15000);
+	 setTimeout(contract, 15000);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});

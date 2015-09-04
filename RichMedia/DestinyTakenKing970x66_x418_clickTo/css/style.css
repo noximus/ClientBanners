@@ -135,16 +135,16 @@ img#bundlesweeps{
 }
 img#enterForEx{
 	position: absolute;
-	top: 145px;
-  left: 20px;
+	top: 75px;
+  left: 0px;
 }
 
 #prizeEx{
 	color: white;
     width: 531px;
     position: absolute;
-    left: 20px;
-    top: 222px;
+    left: 0px;
+    top: 248px;
     font-size: 22px;
 }
 div#tweetEx{

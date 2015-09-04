@@ -3,12 +3,19 @@
 
 .container {
 position: absolute;
-width:970px;
-height:66px;
+width:1280px;
+height:100px;
 background: url('../images/starbg.jpg');	
 overflow:hidden;
 cursor: pointer;
 	
+}
+
+#close {
+	position: absolute;
+    top: 392px;
+    left: 241px;
+    z-index: 500;
 }
 
 #learnMore{
@@ -67,8 +74,8 @@ img#hashtag{
 div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
-	width: 970px;
-	height: 66px;
+	width: 1280px;
+	height: 100px;
 	z-index: 100;
 }
 img#greatness{
@@ -98,19 +105,20 @@ img#bundlesweeps{
 }
 #containerExWrap{
 	position: absolute;
-	width:970px;
-	height:500px;
+	width:1280px;
+	height:418px;
 	overflow:hidden;
 	cursor: pointer;
 	left:0px;
 	z-index: 3000000;
+	
 
 }
 .containerEx {
 	display: none;
 	position: absolute;
 	width:300px;
-	height:500px;
+	height:418px;
 	background: url('../images/starbgEx.jpg');	
 	cursor: pointer;
 	left:670px;
@@ -119,7 +127,7 @@ img#bundlesweeps{
 }
 #vidHolder{
 	width: 670px;
-	height: 500px;
+	height: 418px;
 	left:-670px;
 	position: absolute;
 }
@@ -135,21 +143,21 @@ img#bundlesweeps{
 }
 img#enterForEx{
 	position: absolute;
-	top: 115px;
-  left: 0px;
+	top: 145px;
+  left: 20px;
 }
 
 #prizeEx{
 	color: white;
     width: 531px;
     position: absolute;
-    left: 0px;
-    top: 288px;
+    left: 20px;
+    top: 222px;
     font-size: 22px;
 }
 div#tweetEx{
 	position: absolute;
-	top:185px;
+	top:145px;
 	left: 20px;
 }
 
@@ -181,18 +189,18 @@ div#heros img{
 	opacity: 0;
 }
 img#hashtagEx{
-	top: 212px;
+	top: 182px;
 }
 
 div#finalFrameEx{
 	text-align: center;
 	background-color: #17669e;
 	width: 300px;
-	height: 500px;
+	height: 418px;
 	z-index: 100;
 }
 img#greatnessEx{
-	top: 200px;
+	top: 165px;
 	left: 45px;
 }
 img#ps4logo{
@@ -201,7 +209,7 @@ img#ps4logo{
 }
 img#bundlesweepsEx{
 	left: 65px;
-	top: 162px;
+	top: 100px;
 }
 #lrnBtnEx{
 	top: 28px;
@@ -215,17 +223,4 @@ img#bundlesweepsEx{
 #tweetEx,div#heroFrameEx, img#hashtagEx,div#finalFrameEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #bundlesweepsEx{
 	display: none;
 	position: absolute;
-}
-#lrnBtnEx2{
-	color: #fff;
-	opacity: 0;
-	display: none;
-	position: absolute;
-	background: url('../images/btnBgEx.svg');
-	font-size: 12px;
-	top:310px;
-	left: 88px;
-	border: none;
-	padding: 10px 23px 15px 23px;
-	cursor: pointer;
 }
