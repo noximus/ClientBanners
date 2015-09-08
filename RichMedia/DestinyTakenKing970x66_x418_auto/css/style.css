@@ -11,6 +11,24 @@ cursor: pointer;
 display: none;
 	
 }
+#close {
+	position: absolute;
+  top: 392px;
+  left: 396px;
+  z-index: 500;
+}
+#extra {
+	position: absolute;
+	left:444px;
+	top:27px;
+}
+
+#click_to_expand {
+	position: absolute;
+	right:17px;
+  top: 48px;
+  z-index: 600;
+}
 
 #learnMore{
 	position: absolute;

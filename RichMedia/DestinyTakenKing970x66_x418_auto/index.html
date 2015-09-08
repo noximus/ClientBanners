@@ -47,6 +47,7 @@
 </div>
 <div id="containerExWrap">
 <div class="containerEx" id="containerEx">
+<div id="close"><img src="images/close.png"></div>
 	<div id="learnMoreEx">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -105,6 +106,9 @@ function isPlaying(){
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
 	vidHolder = FT.query("#vidHolder"),
+	containerExWrapHolder = FT.query("#containerExWrap"),
+	click_to_expand_btn = FT.query("#click_to_expand"),
+	close = FT.query("#close"),
 	vid = myFT.insertVideo({
 		parent: vidHolder,
 		video: "video1",
@@ -117,6 +121,7 @@ function isPlaying(){
 	expand = function(){
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
+		containerExWrapHolder.style.opacity = "1";
 		myFT.expand();
 		
 		// vid.unmute();
@@ -141,6 +146,7 @@ function isPlaying(){
 		unexpanded.style.opacity = "1";
 		// vid.video.pause();
 		//if(e && e.type) {
+			// home_animation2.frame1();
     	myFT.contract();
     	vid.pause();
     //}
@@ -151,11 +157,11 @@ function isPlaying(){
 	
 
 	// vid.video.muted = true;
-	myFT.addEventListener('contract', contract);
+	// myFT.addEventListener('contract', contract);
 	
 	myFT.applyButton(unexpanded, expand);
 	myFT.applyClickTag(expanded);
-	// myFT.applyButton(close, function(){myFT.contract()});
+	myFT.applyButton(close, function(){myFT.contract()});
 	// setTimeout(function(){ myFT.expand(); }, 15000);
 	setTimeout(onAutoExpand, 500);
 	setTimeout(contract, 15000);
