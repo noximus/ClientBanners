@@ -97,16 +97,15 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
-function isPlaying(){
+	function isPlaying(){
 		console.log("it's playing");
 	};
-
 	var myFT = new FT,
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
 	vidHolder = FT.query("#vidHolder"),
 	containerExWrapHolder = FT.query("#containerExWrap"),
-	click_to_expand_btn = FT.query("#click_to_expand"),
+	click_to_expand_btn = FT.query("#lrnBtn"),
 	close = FT.query("#close"),
 	vid = myFT.insertVideo({
 		parent: vidHolder,
@@ -116,57 +115,45 @@ function isPlaying(){
 		height: "418",
 		muted: true
 	}),
-	
+
 	expand = function(){
 		unexpanded.style.display = "none";
-		expanded.style.display = "block";
+		containerExWrapHolder.style.display = "block";
 		containerExWrapHolder.style.opacity = "1";
-		myFT.expand();
-		
-		// vid.unmute();
-		// vid.video.play();
-		console.log('expand');
+		// myFT.expand();
+		home_animation.frame1ExIntro();
+		console.log("expand");
 	},
 	onAutoExpand = function(){
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
-		myFT.expand();
+		// myFT.expand();
 		vid.video.addEventListener('play', isPlaying);
-		
-		//vid.mute();
 		vid.play();
+		console.log("auto expand");
 
-		//console.log(vid.video.currentTime);
-		//vid.muted = true;
 	},
 	contract = function(e){
-		expanded.style.display = "none";
+		containerExWrapHolder.style.display = "none";
 		unexpanded.style.display = "block";
 		unexpanded.style.opacity = "1";
-		// vid.video.pause();
-		//if(e && e.type) {
-			home_animation.frame1();
-    	myFT.contract();
-    	vid.pause();
-    //}
-	};
-	
-	
-	
-	
+		home_animation.frame1();
+    vid.pause();
+    console.log("contract");
+    clearTimeout(ContractTimeOut);
 
-	// vid.video.muted = true;
-	myFT.addEventListener('contract', contract);
-	
-	myFT.applyButton(unexpanded, expand);
-	myFT.applyClickTag(expanded);
+	};
 	myFT.applyButton(close, function(){myFT.contract()});
-	// setTimeout(function(){ myFT.expand(); }, 15000);
-	setTimeout(onAutoExpand, 500);
-	setTimeout(contract, 15000);
+	myFT.applyButton(click_to_expand_btn, function(){expand()});
+	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});
+
+	myFT.applyClickTag(expanded);
+	setTimeout(onAutoExpand, 500);
+	var ContractTimeOut = setTimeout(contract, 15000);
+	
 
 </script>
 </body>
