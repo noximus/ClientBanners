@@ -120,14 +120,14 @@
 		unexpanded.style.display = "none";
 		containerExWrapHolder.style.display = "block";
 		containerExWrapHolder.style.opacity = "1";
-		// myFT.expand();
+		myFT.expand();
 		home_animation.frame1ExIntro();
 		console.log("expand");
 	},
 	onAutoExpand = function(){
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
-		// myFT.expand();
+		myFT.expand();
 		vid.video.addEventListener('play', isPlaying);
 		vid.play();
 		console.log("auto expand");
@@ -140,11 +140,16 @@
 		home_animation.frame1();
     vid.pause();
     console.log("contract");
+    if(e && e.type) {
+	    myFT.contract();
+	  }
     clearTimeout(ContractTimeOut);
 
 	};
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
+	myFT.applyButton(unexpanded, expand);
+
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
