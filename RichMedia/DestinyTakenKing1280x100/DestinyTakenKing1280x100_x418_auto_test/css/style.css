@@ -2,35 +2,33 @@
 /* CSS Document */
 
 .container {
-position: absolute;
-width:1280px;
-height:100px;
-overflow:hidden;
-cursor: pointer;
-opacity: 0;
-background-color: #17669e;
-	
+	position: absolute;
+	width:1280px;
+	height:100px;
+	overflow:hidden;
+	cursor: pointer;
+	opacity: 0;
+	background: url('../images/starbg.jpg');	
 }
 
 #close {
 	position: absolute;
-    top: 392px;
-    left: 396px;
-    z-index: 500;
+  top: 392px;
+  left: 396px;
+  z-index: 500;
 }
 
 #extra {
-position: absolute;
-left:444px;
-top:27px;
-
+	position: absolute;
+	left:444px;
+	top:27px;
 }
 
 #click_to_expand {
-position: absolute;
-right:17px;
- top: 48px;
- z-index: 600;
+	position: absolute;
+	right:17px;
+  top: 48px;
+  z-index: 600;
 }
 
 #learnMore{

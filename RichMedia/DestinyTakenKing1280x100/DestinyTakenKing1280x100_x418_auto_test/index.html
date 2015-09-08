@@ -61,7 +61,7 @@
 		<img src="images/enterEx.png" id="enterForEx">	
 	</div>
 	
-	<div id="prizeEx"><img src="images/enter.png"></div>
+	<div id="prizeEx"><img src="images/home_tagEx.png"></div>
 
 
 	 <div id="tweetEx">
@@ -128,7 +128,7 @@ function isPlaying(){
 		containerExWrapHolder.style.opacity = "1";
 		myFT.expand();
 		vid.play();
-		
+		home_animation();
 		 vid.unmute();
 		// vid.video.play();
 		console.log('expand');
@@ -152,7 +152,7 @@ function isPlaying(){
 		containerExWrapHolder.style.opacity = "0";
 		// vid.video.pause();
 		//if(e && e.type) {
-			
+			home_animation2();
     	myFT.contract();
     	vid.pause();
     //}
