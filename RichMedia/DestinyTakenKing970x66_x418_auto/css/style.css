@@ -103,16 +103,10 @@ img#bundlesweeps{
 	top: 8px;
 }
 #lrnBtn{
-	top: 25px;
-	right: -5px;
-	color: #fff;
-	opacity: 0;
+	top: 23px;
+	right: 0px;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBgEx.svg');
-	font-size: 12px;
-	border: none;
-	padding: 10px 23px 15px 23px;
 	cursor: pointer;
 }
 #enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{

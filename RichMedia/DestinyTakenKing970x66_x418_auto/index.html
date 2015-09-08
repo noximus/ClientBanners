@@ -33,7 +33,7 @@
 	<div id="finalFrame">
 		<img src="images/greatness.png" id="greatness">
 		<img src="images/bundlesweeps.png" id='bundlesweeps'>
-		<button id='lrnBtn'>CLICK TO EXPAND</button>
+		<img id='lrnBtn' src="images/btnBgEx.gif">
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png">
@@ -142,6 +142,16 @@
 	pausePlay = function(){
 		clearTimeout(ContractTimeOut);
 	};
+	var autoCloseTimer=setInterval(function(){
+  	try{
+		if(document.activeElement.id!=""){
+				clearInterval(ContractTimeOut)       		
+				clearInterval(autoCloseTimer)       	
+		}
+  	}catch(error){
+  		//do nothing
+  	}
+  },250);
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);

@@ -33,7 +33,7 @@
 	<div id="finalFrame">
 		<img src="images/greatness.png" id="greatness">
 		<img src="images/bundlesweeps.png" id='bundlesweeps'>
-		<button id='lrnBtn'>CLICK TO EXPAND</button>
+		<img id='lrnBtn' src="images/btnBgEx.gif">
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png">
@@ -127,16 +127,13 @@
     if(e && e.type) {
 	    myFT.contract();
 	  }
-    clearTimeout(ContractTimeOut);
+    // clearTimeout(ContractTimeOut);
 
-	},
-	pausePlay = function(){
-		clearTimeout(ContractTimeOut);
-	};
+	}
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);
-	myFT.applyButton(vidHolder, pausePlay);
+	// myFT.applyButton(vidHolder, pausePlay);
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
@@ -144,7 +141,7 @@
 
 	myFT.applyClickTag(expanded);
 	// setTimeout(onAutoExpand, 500);
-	var ContractTimeOut = setTimeout(contract, 15000);
+	// var ContractTimeOut = setTimeout(contract, 15000);
 	
 
 </script>
