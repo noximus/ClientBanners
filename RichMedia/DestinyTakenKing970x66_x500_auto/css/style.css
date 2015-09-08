@@ -2,15 +2,25 @@
 /* CSS Document */
 
 .container {
-position: absolute;
-width:970px;
-height:66px;
-background: url('../images/starbg.jpg');	
-overflow:hidden;
-cursor: pointer;
-	
+	position: absolute;
+	width:970px;
+	height:66px;
+	background: url('../images/starbg.jpg');	
+	overflow:hidden;
+	cursor: pointer;
+	display: none;
 }
-
+#close {
+	position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 500;
+}
+#extra {
+	position: absolute;
+	left:444px;
+	top:27px;
+}
 #learnMore{
 	position: absolute;
 	right: 0px;
@@ -84,9 +94,9 @@ img#bundlesweeps{
 	top: 8px;
 }
 #lrnBtn{
-	top: 28px;
+	top: 284x;
 	position: absolute;
-	right: 6px;
+	right: 0px;
 	display: none;
 }
 #enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{
@@ -161,7 +171,7 @@ div#waveEx{
 }
 div#bloodEx{
 	position: absolute;
-	bottom: 5px;
+	bottom: 30px;
 	right: 10px;
 	z-index: 200000;
 }

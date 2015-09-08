@@ -31,22 +31,21 @@
 		
 	</div>
 	<div id="finalFrame">
-		<img src="images/ps4logo.png" id='ps4logo'>
 		<img src="images/greatness.png" id="greatness">
 		<img src="images/bundlesweeps.png" id='bundlesweeps'>
-		<a href="#" id="lrnBtn">
-			<img src="images/learnBtn.png" >
-		</a>
+		<img id='lrnBtn' src="images/btnBgEx.gif">
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png">
 	</div>
+	
 	<div id="logo">
 		<img src="images/destinylogo.png">
 	</div>
 </div>
 <div id="containerExWrap">
 <div class="containerEx" id="containerEx">
+<div id="close"><img src="images/close.png"></div>
 	<div id="learnMoreEx">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -55,10 +54,7 @@
 	<div id="enterEx">
 		<img src="images/enterEx.png" id="enterForEx">	
 	</div>
-	
 	<div id="prizeEx"><img src="images/home_tagEx.png"></div>
-
-
 	 <div id="tweetEx">
 		<img src="images/tweetEx.png">
 	</div>
@@ -67,20 +63,14 @@
 			<img src="images/herosbgEx.jpg" id='herosbgEx'>
 		</div>
 		<img src="images/hashtagEx.png" id="hashtagEx">
-		
 	</div>
 	<div id="finalFrameEx">
-		<img src="images/ps4logoEx.png" id='ps4logoEx'>
 		<img src="images/greatnessEx.png" id="greatnessEx">
 		<img src="images/bundlesweeps.png" id='bundlesweepsEx'>
-		<a href="#" id="lrnBtnEx">
-			<img src="images/learnBtn.png" >
-		</a>
 		<button id='lrnBtnEx2'>LEARN MORE</button>
-
 	</div> 
 	<div id="waveEx">
-		<img src="images/wave1Ex.png">
+		<img src="images/wave1.png">
 	</div>
 	<div id="bloodEx">
 		<img src="images/ESRB.png">
@@ -98,56 +88,83 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
-
+	function isPlaying(){
+		console.log("it's playing");
+	};
 	var myFT = new FT,
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
 	vidHolder = FT.query("#vidHolder"),
+	containerExWrapHolder = FT.query("#containerExWrap"),
+	click_to_expand_btn = FT.query("#lrnBtn"),
+	close = FT.query("#close"),
+	vid = myFT.insertVideo({
+		parent: vidHolder,
+		video: "video1",
+		controls: true,
+		width: "670",
+		height: "500",
+		muted: true
+	}),
+
 	expand = function(){
 		unexpanded.style.display = "none";
-		expanded.style.display = "block";
+		containerExWrapHolder.style.display = "block";
+		containerExWrapHolder.style.opacity = "1";
 		myFT.expand();
-		// vid.unmute();
-		// vid.video.play();
-		console.log('expand');
+		home_animation.frame1ExIntro();
+		console.log("expand");
+		vid.play();
+		vid.unmute();
 	},
 	onAutoExpand = function(){
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
 		myFT.expand();
-		// vid.mute();
-		// vid.video.play();
+		vid.video.addEventListener('play', isPlaying);
+		vid.play();
+		console.log("auto expand");
+
 	},
 	contract = function(e){
-		expanded.style.display = "none";
+		containerExWrapHolder.style.display = "none";
 		unexpanded.style.display = "block";
-		// vid.video.pause();
-		home_animation2();
 		unexpanded.style.opacity = "1";
-		if(e && e.type) {
-    	myFT.contract();
-    }
-	};
-	var vid = myFT.insertVideo({
-		parent: vidHolder,
-		video: "video1",
-		controls: true,
-		width: "670",
-		height: "500"
-	});
+		home_animation.frame1();
+    vid.pause();
+    console.log("contract");
+    if(e && e.type) {
+	    myFT.contract();
+	  }
+    clearTimeout(ContractTimeOut);
 
-	// vid.video.muted = true;
-	myFT.addEventListener('contract', contract);
-	
+	},
+	pausePlay = function(){
+		clearTimeout(ContractTimeOut);
+	};
+	var autoCloseTimer=setInterval(function(){
+  	try{
+		if(document.activeElement.id!=""){
+				clearInterval(ContractTimeOut)       		
+				clearInterval(autoCloseTimer)       	
+		}
+  	}catch(error){
+  		//do nothing
+  	}
+  },250);
+	myFT.applyButton(close, function(){myFT.contract()});
+	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);
-	myFT.applyClickTag(expanded);
-	// myFT.applyButton(close, function(){myFT.contract()});
-	// setTimeout(function(){ myFT.expand(); }, 15000);
-	setTimeout(onAutoExpand, 0);
-	setTimeout(contract, 15000);
+	myFT.applyButton(vidHolder, pausePlay);
+	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});
+
+	myFT.applyClickTag(expanded);
+	setTimeout(onAutoExpand, 500);
+	var ContractTimeOut = setTimeout(contract, 15000);
+	
 
 </script>
 </body>

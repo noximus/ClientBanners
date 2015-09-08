@@ -1,193 +1,109 @@
-home_animation = (function() {
-	
-	var boundEvents = {};
+var home_animation = {
+  init: function () {
+    home_animation.frame1Ex();
+  },
+  container: document.getElementById("container"),
+  enterFor: document.getElementById("enterFor"),
+  prize: document.getElementById("prize"),
+  tweet: document.getElementById("tweet"),
+  enter: document.getElementById("enter"),
+  heroFrame: document.getElementById("heroFrame"),
+  heros: document.getElementById("heros"),
+  hashtag: document.getElementById("hashtag"),
+  greatness: document.getElementById("greatness"),
+  finalFrame: document.getElementById("finalFrame"),
+  lrnBtn: document.getElementById("lrnBtn"),
+  wave: document.getElementById("wave"),
+  logo: document.getElementById("logo"),
+  learnMore: document.getElementById("learnMore"),
+  ps4logo: document.getElementById("ps4logo"),
+  bundlesweeps: document.getElementById("bundlesweeps"),
+  containerEx: document.getElementById("containerEx"),
+  bloodEx: document.getElementById("bloodEx"),
+  enterForEx: document.getElementById("enterForEx"),
+  prizeEx: document.getElementById("prizeEx"),
+  tweetEx: document.getElementById("tweetEx"),
+  enterEx: document.getElementById("enterEx"),
+  heroFrameEx: document.getElementById("heroFrameEx"),
+  herosEx: document.getElementById("herosEx"),
+  hashtagEx: document.getElementById("hashtagEx"),
+  greatnessEx: document.getElementById("greatnessEx"),
+  finalFrameEx: document.getElementById("finalFrameEx"),
+  lrnBtnEx: document.getElementById("lrnBtnEx"),
+  lrnBtnEx2: document.getElementById("lrnBtnEx2"),
+  waveEx: document.getElementById("waveEx"),
+  logoEx: document.getElementById("logoEx"),
+  learnMoreEx: document.getElementById("learnMoreEx"),
+  ps4logoEx: document.getElementById("ps4logoEx"),
+  bundlesweepsEx: document.getElementById("bundlesweepsEx"),
+  frame1: function () {
+    TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.delayedCall(4, home_animation.frame2);
+  },
+  frame2: function () {
+    TweenLite.to(prize, 0.4, {opacity: 0, ease: Linear.eastOut});
+    TweenLite.to(enter, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
+    TweenLite.to(tweet, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
+    TweenLite.delayedCall(4, home_animation.frame3);
+  },
+  frame3: function () {
+    TweenLite.to(tweet, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
+    TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(herosbg, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(hashtag, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.delayedCall(4.5, home_animation.frame4);
+  },
+  frame4: function () {
+    TweenLite.to(heroFrame, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(logo, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(learnMore, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(finalFrame, .5, {delay: 0, opacity: 1, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(greatness, 0.5, {delay: 1, opacity: 1, display:'block', ease: Linear.easeIn});
+    TweenLite.to(bundlesweeps, .5, {delay:1.5, opacity:1, display: 'block', ease:Linear.easeIn});
+    TweenLite.to(lrnBtn, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
+  },
+  frame1ExIntro: function () {
+    TweenLite.to(finalFrameEx, 0, {delay: 0, opacity: 0, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(greatnessEx, 0, {delay: 0, opacity: 0, display:'block', ease: Linear.easeIn});
+    TweenLite.to(bundlesweepsEx, 0, {delay:0, opacity:0, display: 'block', ease:Linear.easeIn});
+    TweenLite.to(lrnBtnEx2, 0, {delay: 0, opacity: 0, display:'block', ease: Linear.easeIn});
+    TweenLite.to(enterEx, 0, {delay: 0, opacity: 1, display: 'block', ease: Linear.easeOut});
+    TweenLite.to(bloodEx, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(logoEx, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(learnMoreEx, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.delayedCall(0, home_animation.frame1Ex);
+  },
+  frame1Ex: function () {
+    TweenLite.to(container, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(containerEx, .5, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(enterForEx, 1, {delay: .3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.to(prizeEx, 1, {delay:.7, opacity: 1, ease: Linear.eastOut});
+    TweenLite.delayedCall(3, home_animation.frame2Ex);
+  },
+  frame2Ex: function () {
+    TweenLite.to(prizeEx, 0.4, {opacity: 0, ease: Linear.eastOut});
+    TweenLite.to(enterEx, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
+    TweenLite.to(tweetEx, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
+    TweenLite.delayedCall(3, home_animation.frame3Ex);
+  },
+  frame3Ex: function () {
+    TweenLite.to(tweetEx, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
+    TweenLite.to(heroFrameEx, 0.3, {delay:.5, display: 'block',opacity:1, ease: Linear.easeIn});
+    TweenLite.to(herosbgEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(hashtagEx, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.delayedCall(3.5, home_animation.frame4Ex);
+  },
+  frame4Ex: function () {
+    TweenLite.to(heroFrameEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(bloodEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(logoEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(learnMoreEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
+    TweenLite.to(finalFrameEx, .5, {delay: 0, opacity: 1, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(greatnessEx, 0.5, {delay: 1, opacity: 1, display:'block', ease: Linear.easeIn});
+    TweenLite.to(bundlesweepsEx, .5, {delay:1.5, opacity:1, display: 'block', ease:Linear.easeIn});
+    TweenLite.to(lrnBtnEx2, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
+  }
+};
 
-	function bind (elem, eventName, callback) {
-		if (elem.addEventListener) {
-			elem.addEventListener(eventName, callback, false);
-		}
-
-		else if (elem.attachEvent) {
-			var eID = elem.attachEvent('on'+ eventName, callback);
-			boundEvents[eID] = { name: eventName, callback: callback };
-		}
-	}
-
-	function unbind (elem, eventName, callback) {
-		if (elem.removeEventListener) {
-			elem.removeEventListener(eventName, callback, false);
-		}
-
-		else if (elem.detachEvent) {
-			for (var eID in boundEvents) {
-				if ((boundEvents[eID].name === eventName) &&
-						(boundEvents[eID].callback === callback)) {
-					elem.detachEvent(eID);
-					delete boundEvents[eID];
-				}
-			}
-		}
-	}
-	function init()
-	{
-		frame1Ex();	
-	}
-		// vars	
-		var containerEx = document.getElementById("containerEx");
-		var bloodEx = document.getElementById("bloodEx");
-		var enterForEx = document.getElementById("enterForEx");
-		var prizeEx = document.getElementById("prizeEx");
-		var tweetEx = document.getElementById("tweetEx");
-		var enterEx = document.getElementById("enterEx");
-		var heroFrameEx = document.getElementById("heroFrameEx");		
-		var herosEx = document.getElementById("herosEx");	
-		var hashtagEx = document.getElementById("hashtagEx");	
-		var greatnessEx = document.getElementById("greatnessEx");
-		var finalFrameEx = document.getElementById("finalFrameEx");
-		var lrnBtnEx = document.getElementById("lrnBtnEx");
-		var lrnBtnEx2 = document.getElementById("lrnBtnEx2");
-		var waveEx = document.getElementById("waveEx");
-		var logoEx = document.getElementById("logoEx");
-		var learnMoreEx = document.getElementById("learnMoreEx");
-		var ps4logoEx = document.getElementById("ps4logoEx");
-		var bundlesweepsEx = document.getElementById("bundlesweepsEx");
-
-	
-	function frame1Ex()
-	{
-		TweenLite.to(container, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(containerEx, .5, {opacity:1, display: 'block', ease:Linear.easeInOut});
-		TweenLite.to(enterForEx, 1, {delay: .5, opacity: 1, ease: Linear.eastOut});
-		TweenLite.to(prizeEx, 1, {delay:1, opacity: 1, ease: Linear.eastOut});
-		TweenLite.delayedCall(3, frame2Ex);
-	}
-	
-	function frame2Ex()
-	{
-		TweenLite.to(prizeEx, 0.4, {opacity: 0, ease: Linear.eastOut});
-		TweenLite.to(enterEx, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
-		TweenLite.to(tweetEx, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
-		TweenLite.delayedCall(3, frame3Ex);
-	}
-	
-	function frame3Ex()
-	{
-		TweenLite.to(tweetEx, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
-		TweenLite.to(heroFrameEx, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(herosbgEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(hashtagEx, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.delayedCall(3.5, frame4Ex);
-	}
-	
-	function frame4Ex()
-	{
-		TweenLite.to(heroFrameEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(bloodEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(logoEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(learnMoreEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(finalFrameEx, .5, {delay: 1, opacity: 1, display: 'block', ease: Linear.easeIn});
-		// TweenLite.to(ps4logo, .5, {delay: 1.5, opacity:1, display: 'block', ease:Linear.easeIn});
-		TweenLite.to(greatnessEx, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(bundlesweepsEx, .5, {delay:2.5, opacity:1, display: 'block', ease:Linear.easeIn});
-		TweenLite.to(lrnBtnEx2, 0.5, {delay: 3, opacity: 1, display:'block', ease: Linear.easeIn});
-	}
-		
-	init();
-});
-
-home_animation();
-
-home_animation2 = (function() {
-	
-	var boundEvents = {};
-
-	function bind (elem, eventName, callback) {
-		if (elem.addEventListener) {
-			elem.addEventListener(eventName, callback, false);
-		}
-
-		else if (elem.attachEvent) {
-			var eID = elem.attachEvent('on'+ eventName, callback);
-			boundEvents[eID] = { name: eventName, callback: callback };
-		}
-	}
-
-	function unbind (elem, eventName, callback) {
-		if (elem.removeEventListener) {
-			elem.removeEventListener(eventName, callback, false);
-		}
-
-		else if (elem.detachEvent) {
-			for (var eID in boundEvents) {
-				if ((boundEvents[eID].name === eventName) &&
-						(boundEvents[eID].callback === callback)) {
-					elem.detachEvent(eID);
-					delete boundEvents[eID];
-				}
-			}
-		}
-	}
-	function init()
-	{
-		frame1();	
-	}
-		// vars	
-		var container = document.getElementById("container");
-		var enterFor = document.getElementById("enterFor");
-		var prize = document.getElementById("prize");
-		var tweet = document.getElementById("tweet");
-		var enter = document.getElementById("enter");
-		var heroFrame = document.getElementById("heroFrame");		
-		var heros = document.getElementById("heros");	
-		var hashtag = document.getElementById("hashtag");	
-		var greatness = document.getElementById("greatness");
-		var finalFrame = document.getElementById("finalFrame");
-		var lrnBtn = document.getElementById("lrnBtn");
-		var wave = document.getElementById("wave");
-		var logo = document.getElementById("logo");
-		var learnMore = document.getElementById("learnMore");
-		var ps4logo = document.getElementById("ps4logo");
-		var bundlesweeps = document.getElementById("bundlesweeps");
-
-	function frame1()
-	{
-		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.delayedCall(3, frame4);
-	}
-	
-	function frame2()
-	{
-		TweenLite.to(prize, 0.4, {opacity: 0, ease: Linear.eastOut});
-		TweenLite.to(enter, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
-		TweenLite.to(tweet, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
-		TweenLite.delayedCall(3, frame3);
-	}
-	
-	function frame3()
-	{
-		TweenLite.to(tweet, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
-		TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(herosbg, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(hashtag, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.delayedCall(3.5, frame4);
-	}
-	
-	function frame4()
-	{
-		TweenLite.to(heroFrame, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		// TweenLite.to(wave, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(logo, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(learnMore, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-		TweenLite.to(finalFrame, .5, {delay: 1, opacity: 1, display: 'block', ease: Linear.easeIn});
-		// TweenLite.to(ps4logo, .5, {delay: 1.5, opacity:1, display: 'block', ease:Linear.easeIn});
-		TweenLite.to(greatness, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(bundlesweeps, .5, {delay:2.5, opacity:1, display: 'block', ease:Linear.easeIn});
-		TweenLite.to(lrnBtn, 0.5, {delay: 3, opacity: 1, display:'block', ease: Linear.easeIn});
-	}
-	
-		
-	init();
-});
-
-// home_animation2();
+home_animation.init();
