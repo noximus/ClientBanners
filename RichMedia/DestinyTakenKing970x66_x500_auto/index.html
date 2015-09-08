@@ -136,12 +136,7 @@
     if(e && e.type) {
 	    myFT.contract();
 	  }
-    clearTimeout(ContractTimeOut);
-
-	},
-	pausePlay = function(){
-		clearTimeout(ContractTimeOut);
-	};
+  }
 	var autoCloseTimer=setInterval(function(){
   	try{
 		if(document.activeElement.id!=""){
@@ -155,7 +150,7 @@
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);
-	myFT.applyButton(vidHolder, pausePlay);
+	// myFT.applyButton(vidHolder, pausePlay);
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
