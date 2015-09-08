@@ -1,12 +1,12 @@
 FT.manifest({
 	"filename":"index.html",
-	"width":970,
-	"height":66,
+	"width":1280,
+	"height":100,
   "clickTagCount":1,
   "expand":{
     "fullscreen":false,
-    "width":970,
-    "height":500,
+    "width":1280,
+    "height":418,
     "indentAcross":0,
     "indentDown":0
   },
