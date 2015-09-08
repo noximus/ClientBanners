@@ -123,6 +123,8 @@
 		myFT.expand();
 		home_animation.frame1ExIntro();
 		console.log("expand");
+		vid.play();
+		vid.unmute();
 	},
 	onAutoExpand = function(){
 		unexpanded.style.display = "none";
@@ -145,11 +147,14 @@
 	  }
     clearTimeout(ContractTimeOut);
 
+	},
+	pausePlay = function(){
+		clearTimeout(ContractTimeOut);
 	};
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);
-
+	myFT.applyButton(vidHolder, pausePlay);
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
