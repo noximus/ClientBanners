@@ -7,7 +7,7 @@ FT.manifest({
     "fullscreen":false,
     "width":970,
     "height":418,
-    "indentAcross":670,
+    "indentAcross":0,
     "indentDown":0
   },
   "hideBrowsers": ["ie8"],
