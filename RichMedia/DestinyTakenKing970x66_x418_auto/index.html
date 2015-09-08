@@ -34,13 +34,12 @@
 		<img src="images/ps4logo.png" id='ps4logo'>
 		<img src="images/greatness.png" id="greatness">
 		<img src="images/bundlesweeps.png" id='bundlesweeps'>
-		<a href="#" id="lrnBtn">
-			<img src="images/learnBtn.png" >
-		</a>
+		<button id='lrnBtn'>CLICK TO EXPAND</button>
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png">
 	</div>
+	
 	<div id="logo">
 		<img src="images/destinylogo.png">
 	</div>
@@ -146,7 +145,7 @@ function isPlaying(){
 		unexpanded.style.opacity = "1";
 		// vid.video.pause();
 		//if(e && e.type) {
-			// home_animation2.frame1();
+			home_animation.frame1();
     	myFT.contract();
     	vid.pause();
     //}
@@ -157,7 +156,7 @@ function isPlaying(){
 	
 
 	// vid.video.muted = true;
-	// myFT.addEventListener('contract', contract);
+	myFT.addEventListener('contract', contract);
 	
 	myFT.applyButton(unexpanded, expand);
 	myFT.applyClickTag(expanded);
