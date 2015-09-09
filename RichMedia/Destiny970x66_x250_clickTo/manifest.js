@@ -1,0 +1,13 @@
+FT.manifest({
+	"filename":"index.html",
+	"width":970,
+	"height":66,
+  "clickTagCount":1,
+  "expand":{
+    "fullscreen":false,
+    "width":970,
+    "height":250,
+    "indentAcross":0,
+    "indentDown":0
+  }
+});
