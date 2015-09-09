@@ -20,6 +20,7 @@ var home_animation = {
   bundlesweeps: document.getElementById("bundlesweeps"),
   containerEx: document.getElementById("containerEx"),
   bloodEx: document.getElementById("bloodEx"),
+  blood: document.getElementById("blood"),
   enterForEx: document.getElementById("enterForEx"),
   prizeEx: document.getElementById("prizeEx"),
   tweetEx: document.getElementById("tweetEx"),
@@ -39,6 +40,7 @@ var home_animation = {
   frame1: function () {
     TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
     TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.to(blood, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
     TweenLite.delayedCall(4, home_animation.frame2);
   },
   frame2: function () {
@@ -55,6 +57,7 @@ var home_animation = {
     TweenLite.delayedCall(4.5, home_animation.frame4);
   },
   frame4: function () {
+    TweenLite.to(blood, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     TweenLite.to(heroFrame, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     TweenLite.to(logo, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     TweenLite.to(learnMore, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});

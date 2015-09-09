@@ -3,12 +3,12 @@
 
 .container {
 position: absolute;
-width:1280px;
-height:100px;
+width:970px;
+height:250px;
 background: url('../images/starbg.jpg');	
 overflow:hidden;
 cursor: pointer;
-display: none;
+display: block;
 	
 }
 #close {
@@ -41,23 +41,29 @@ display: none;
 }
 img#enterFor{
 	position: absolute;
-	top: 5px;
-  left: 200px;
+	top: 55px;
+  left: 150px;
 }
 
 #prize{
 	color: white;
     width: 531px;
     position: absolute;
-    right: 85px;
-    top: 35px;
+    right: 288px;
+    top: 139px;
     font-size: 22px;
 }
 div#tweet{
 	position: absolute;
 	right: 250px;
+	top:50px;
 }
-
+div#blood{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 200000;
+}
 div#wave{
 	position: absolute;
 	bottom: 0;
@@ -79,32 +85,32 @@ div#heros img{
 	opacity: 0;
 }
 img#hashtag{
-	top: 5px;
-	right: 250px;
+	top: 80px;
+	right: 182px;
 }
 
 div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
-	width: 1280px;
-	height: 100px;
+	width: 970px;
+	height: 250px;
 	z-index: 100;
 }
 img#greatness{
-	top: 7px;
-	right: 245px;
+	top: 65px;
+	right: 122px;
 }
 img#ps4logo{
 	bottom: 6px;
     left: 9px;
 }
 img#bundlesweeps{
-	right: 5px;
-	top: 8px;
+	right: 10px;
+	bottom: 10px;
 }
 #lrnBtn{
-	top: 23px;
-	right: 0px;
+	top: 163px;
+	right: 417px;
 	display: none;
 	position: absolute;
 	cursor: pointer;
@@ -118,12 +124,13 @@ img#bundlesweeps{
 }
 #containerExWrap{
 	position: absolute;
-	width:1280px;
+	width:970px;
 	height:418px;
 	overflow:hidden;
 	cursor: pointer;
 	left:0px;
 	z-index: 3000000;
+	display: none;
 	
 }
 .containerEx {

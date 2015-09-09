@@ -27,7 +27,7 @@
 		<div id="heros">
 			<img src="images/herosbg.jpg"id='herosbg'>
 		</div>
-		<img src="images/hashtag.png" id="hashtag">
+		<img src="images/usingSweep.png" id="hashtag">
 		
 	</div>
 	<div id="finalFrame">
@@ -38,7 +38,9 @@
 	<div id="wave">
 		<img src="images/wave1.png">
 	</div>
-	
+	<div id="blood">
+		<img src="images/ESRB.png">
+	</div>
 	<div id="logo">
 		<img src="images/destinylogo.png">
 	</div>
@@ -117,15 +119,6 @@
 		vid.play();
 		vid.unmute();
 	},
-	onAutoExpand = function(){
-		unexpanded.style.display = "none";
-		expanded.style.display = "block";
-		myFT.expand();
-		vid.video.addEventListener('play', isPlaying);
-		vid.play();
-		console.log("auto expand");
-
-	},
 	contract = function(e){
 		containerExWrapHolder.style.display = "none";
 		unexpanded.style.display = "block";
@@ -136,34 +129,21 @@
     if(e && e.type) {
 	    myFT.contract();
 	  }
-    clearTimeout(ContractTimeOut);
+    // clearTimeout(ContractTimeOut);
 
-	},
-	pausePlay = function(){
-		clearTimeout(ContractTimeOut);
-	};
-	var autoCloseTimer=setInterval(function(){
-  	try{
-		if(document.activeElement.id!=""){
-				clearInterval(ContractTimeOut)       		
-				clearInterval(autoCloseTimer)       	
-		}
-  	}catch(error){
-  		//do nothing
-  	}
-  },250);
+	}
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
 	myFT.applyButton(unexpanded, expand);
-	myFT.applyButton(vidHolder, pausePlay);
+	// myFT.applyButton(vidHolder, pausePlay);
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});
 
 	myFT.applyClickTag(expanded);
-	setTimeout(onAutoExpand, 500);
-	var ContractTimeOut = setTimeout(contract, 15000);
+	// setTimeout(onAutoExpand, 500);
+	// var ContractTimeOut = setTimeout(contract, 15000);
 	
 
 </script>
