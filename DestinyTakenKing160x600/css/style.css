@@ -55,6 +55,17 @@ div#heros{
 div#heros img{
 	opacity: 0;
 }
+
+p#noPurch{
+	font-size: 8px;
+	position: absolute;
+	top: 0px;
+    left: 0px;
+	color: #fff;
+	display: none;
+	z-index: 100;
+}
+
 img#hashtag{
 	top: 280px;
 }
