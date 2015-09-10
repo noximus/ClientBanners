@@ -40,20 +40,27 @@ var home_animation = {
   noPurch: document.getElementById("noPurch"), 
   noPurchEx: document.getElementById("noPurchEx"), 
   frame1: function () {
-    TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-    TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.to(finalFrame, 0, {delay: 0, opacity: 0, display: 'none', ease: Linear.easeIn});
+    TweenLite.to(greatness, 0, {delay: 0, opacity: 0, display:'none', ease: Linear.easeIn});
+    TweenLite.to(bundlesweeps, 0, {delay:0, opacity:0, display: 'none', ease:Linear.easeIn});
+    TweenLite.to(lrnBtn, 0, {delay: 0, opacity: 0, display:'none', ease: Linear.easeIn});
+    TweenLite.to(logo, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(learnMore, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(enter, .8, {delay: .3, opacity: 1,display: 'block', ease: Linear.eastOut});
+    TweenLite.to(enterFor, .8, {delay: .3, opacity: 1,display: 'block', ease: Linear.eastOut});
+    TweenLite.to(prize, .8, {delay:1.3, opacity: 1,display: 'block', ease: Linear.eastOut});
     TweenLite.to(blood, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
     TweenLite.delayedCall(4, home_animation.frame2);
   },
   frame2: function () {
-    TweenLite.to(prize, 0.4, {opacity: 0, ease: Linear.eastOut});
+    TweenLite.to(prize, 0.4, {opacity: 0, display: 'none',ease: Linear.eastOut});
     TweenLite.to(enter, 0.4, {opacity: 0, display: 'none', ease: Linear.easeOut});
     TweenLite.to(tweet, 0.3, {delay:.5, display: 'block', opacity: 1, ease: Linear.easeIn});
     TweenLite.delayedCall(4, home_animation.frame3);
   },
   frame3: function () {
-    TweenLite.to(tweet, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
-    TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(tweet, 0.5, {opacity: 0, display: 'none', opacity:0, ease: Linear.easeOut});
+    TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', opacity:1, ease: Linear.easeIn});
     TweenLite.to(herosbg, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
     TweenLite.to(hashtag, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
     TweenLite.to(noPurch, .6, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
