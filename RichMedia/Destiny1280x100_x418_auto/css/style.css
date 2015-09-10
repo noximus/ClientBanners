@@ -105,6 +105,13 @@ img#bundlesweeps{
 	right: 5px;
 	top: 8px;
 }
+img#noPurch{
+	top: 8px;
+	right: 350px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
 #lrnBtn{
 	top: 28px;
 	position: absolute;
@@ -233,6 +240,13 @@ img#ps4logo{
 img#bundlesweepsEx{
 	left: 108px;
 	top: 116px;
+}
+img#noPurchEx{
+	top: 34px;
+	right: 5px;
+	position: absolute;
+	display: none;
+	opacity: 0;
 }
 #lrnBtnEx{
 	top: 28px;

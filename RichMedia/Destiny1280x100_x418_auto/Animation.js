@@ -49,6 +49,7 @@ home_animation = (function() {
 		var learnMore = document.getElementById("learnMore");
 		var ps4logo = document.getElementById("ps4logo");
 		var bundlesweeps = document.getElementById("bundlesweeps");
+		var noPurch = document.getElementById("noPurch");
 
 		var containerEx = document.getElementById("containerEx");
 		var bloodEx = document.getElementById("bloodEx");
@@ -67,6 +68,7 @@ home_animation = (function() {
 		var learnMoreEx = document.getElementById("learnMoreEx");
 		var ps4logoEx = document.getElementById("ps4logoEx");
 		var bundlesweepsEx = document.getElementById("bundlesweepsEx");
+		var noPurchEx = document.getElementById("noPurchEx");
 
 	
 
@@ -92,7 +94,8 @@ home_animation = (function() {
 		TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(herosbg, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.to(hashtag, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.delayedCall(4, frame4);
+		TweenLite.to(noPurch, .5, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
+    	TweenLite.delayedCall(4, home_animation.frame4);
 	}
 	
 	function frame4()
@@ -133,7 +136,8 @@ home_animation = (function() {
 		TweenLite.to(heroFrameEx, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(herosbgEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.to(hashtagEx, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.delayedCall(3.9, frame4Ex);
+		TweenLite.to(noPurchEx, .5, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
+	    TweenLite.delayedCall(4, frame4Ex);
 	}
 	
 	function frame4Ex()
