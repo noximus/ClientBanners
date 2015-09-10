@@ -229,11 +229,12 @@ img#bundlesweepsEx{
 	left: 65px;
 	top: 162px;
 }
-#lrnBtnEx{
-	top: 28px;
+img#noPurchEx{
+	top: 34px;
+	right: 8px;
 	position: absolute;
-	right: 6px;
 	display: none;
+	opacity: 0;
 }
 #enterForEx, #prizeEx, #tweetEx, #herosbgEx, #hashtagEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #finalFrameEx, #bundlesweepsEx{
 	opacity: 0;
@@ -247,11 +248,8 @@ img#bundlesweepsEx{
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBgEx.svg');
-	font-size: 12px;
 	top:310px;
 	left: 88px;
 	border: none;
-	padding: 10px 23px 15px 23px;
 	cursor: pointer;
 }
