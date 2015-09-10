@@ -231,6 +231,13 @@ img#bundlesweepsEx{
 	display: none;
 	opacity: 0;
 }
+img#noPurchEx{
+	top: 34px;
+	right: 8px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
 #lrnBtnEx{
 	top: 28px;
 	position: absolute;

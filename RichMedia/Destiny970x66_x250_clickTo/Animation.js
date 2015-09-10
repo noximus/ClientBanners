@@ -39,8 +39,16 @@ var home_animation = {
   noPurchEx: document.getElementById("noPurchEx"),
 
   frame1: function () {
-    TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-    TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+    TweenLite.to(finalFrame, 0, {delay: 0, opacity: 0, display: 'none', ease: Linear.easeIn});
+    TweenLite.to(greatness, 0, {delay: 0, opacity: 0, display:'none', ease: Linear.easeIn});
+    TweenLite.to(bundlesweeps, 0, {delay:0, opacity:0, display: 'none', ease:Linear.easeIn});
+    TweenLite.to(lrnBtn, 0, {delay: 0, opacity: 0, display:'none', ease: Linear.easeIn});
+    TweenLite.to(logo, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(learnMore, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
+    TweenLite.to(enter, .8, {delay: .3, opacity: 1,display: 'block', ease: Linear.eastOut});
+    TweenLite.to(enterFor, .8, {delay: .3, opacity: 1,display: 'block', ease: Linear.eastOut});
+    TweenLite.to(prize, .8, {delay:1.3, opacity: 1,display: 'block', ease: Linear.eastOut});
+    TweenLite.to(blood, 0, {opacity:1, display: 'block', ease:Linear.easeInOut});
     TweenLite.delayedCall(4, home_animation.frame2);
   },
   frame2: function () {
