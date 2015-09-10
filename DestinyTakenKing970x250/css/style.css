@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#containerEx {
+#container {
 	position: absolute;
 	width:970px;
 	height:250px;
@@ -10,13 +10,13 @@
 	font-family: 'Open Sans';
 	cursor: pointer;
 }
-#vidHolderEx{
+#vidHolder{
 	width: 445px;
 	height: 250px;
 	left:525px;
 	position: absolute;
 }
-#learnMoreEx{
+#learnMore{
 	position: absolute;
 	right: 10px;
 	bottom: 10px;
@@ -24,7 +24,7 @@
 	width: 110px;
 	z-index: 100;
 }
-#learnMoreEx a{
+#learnMore a{
 	font-family: NeuzeitGro;
 	color:  #ffffff;
 	font-size: 13px;
@@ -35,7 +35,7 @@
 	text-decoration: none;
 	display: block;
 }
-#enterEx, #tweetEx{
+#enter, #tweet{
 	height: 84px;
 	width: 647px;
 	position: absolute;
@@ -47,22 +47,22 @@
 }
 
 
-#tweetEx{
+#tweet{
 	top:57px;
 	left:160px !important;
 }
 
 
-#tweetEx, div#herosEx, p#hashtagEx{
+#tweet, div#heros, p#hashtag{
 	display: none;
 	position: absolute;
 }
-#enterEx p, #tweetEx p{
+#enter p, #tweet p{
 	margin: 0;
 	display: block;
 	opacity: 0;
 }
-#prizeEx{
+#prize{
 	position: absolute;
   top: 151px;
   left: 170px;
@@ -72,33 +72,33 @@
   opacity: 0;
 }
 
-div#waveEx{
+div#wave{
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	z-index:20000;
 }
-div#bloodEx{
+div#blood{
 	position: absolute;
 	top: 7px;
 	left: 7px;
 	z-index:20000;
 }
-div#waveEx img{
+div#wave img{
 	display: block;
 }
-div#logoEx{
+div#logo{
 	position: absolute;
 	top: 10px;
   right: 10px;
 }
-div#herosEx{
+div#heros{
 	top: 0;
 }
-div#herosEx img{
+div#heros img{
 	opacity: 0;
 }
-p#noPurchEx{
+p#noPurch{
 	font-size: 8px;
 	position: absolute;
 	top: 4px;
@@ -107,7 +107,7 @@ p#noPurchEx{
 	display: none;
 	z-index: 100;
 }
-p#hashtagEx{
+p#hashtag{
 	z-index: 100;
 	top: 63px;
 	font-size: 18px;
@@ -116,7 +116,7 @@ p#hashtagEx{
 	text-align: center;
 	left: 183px;
 }
-div#finalFrameEx{
+div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
 	color: #fff;
@@ -128,88 +128,74 @@ div#finalFrameEx{
 	margin: 0;
 	opacity: 0;
 }
-.finaltxtEx{
+.finaltxt{
 	color: #fff;
 	opacity: 0;
 	display: none;
 	margin: 0;
 	top: 10px;
 }
-.finaltxtEx img{
+.finaltxt img{
 	top: 60px;
 	left: 145px;
 	position: absolute;
 }
-#learnMore2Ex{
+#learnMore2{
 	position: absolute;
 	top: 10px;
 	right: 10px;
 }
-h4.finaltxtEx{
+h4.finaltxt{
 	margin: 15px;
 }
-h3.finaltxtEx{
+h3.finaltxt{
 	font-size: 25px;
 }
-h1.finaltxtEx{
+h1.finaltxt{
 	font-size: 35px;
 }
-.bundleEx img{
+.bundle img{
 	position: absolute;
 	bottom:10px !important;
 	right:10px !important;
 }
-#lrnBtnEx{
-	color: #fff;
+#lrnBtn{
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBg.svg');
-	font-size: 12px;
 	left: 435px;
 	top: 170px;
 	border: none;
-	padding: 10px 23px 15px 23px;
 	cursor: pointer;
 }
-#greatEx{
+#great{
 	letter-spacing: 2px;
 }
-#ps4logoEx{
+#ps4logo{
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
 	opacity: 0; 
 }
-div#finalFrameEx{
+div#finalFrame{
 	text-align: center;
 	background-color: #17669e;
-	width: 300px;
-	height: 418px;
+	width: 970px;
+	height: 250px;
 	z-index: 100;
 }
-img#greatnessEx{
+img#greatness{
 	top: 165px;
 	left: 45px;
 }
-img#ps4logo{
-	bottom: 6px;
-    left: 45px;
-}
-img#bundlesweepsEx{
+img#bundlesweeps{
 	left: 65px;
 	top: 100px;
 }
-#lrnBtnEx{
-	top: 28px;
-	position: absolute;
-	right: 6px;
-	display: none;
-}
-#enterForEx, #prizeEx, #tweetEx, #herosbgEx, #hashtagEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #finalFrameEx, #bundlesweepsEx{
+#enterFor, #prize, #tweet, #herosbg, #hashtag, #lrnBtn, #greatness, #ps4logo, #finalFrame, #bundlesweeps{
 	opacity: 0;
 }
-#tweetEx,div#heroFrameEx, img#hashtagEx,div#finalFrameEx, #lrnBtnEx, #greatnessEx, #ps4logoEx, #bundlesweepsEx{
+#tweet,div#heroFrame, img#hashtag,div#finalFrame, #lrnBtn, #greatness, #ps4logo, #bundlesweeps{
 	display: none;
 	position: absolute;
 }
