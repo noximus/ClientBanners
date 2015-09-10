@@ -99,7 +99,7 @@ img#ps4logo{
     left: 9px;
 }
 img#bundlesweeps{
-	right: 5px;
+	right: 8px;
 	top: 8px;
 }
 #lrnBtn{
@@ -116,15 +116,11 @@ img#bundlesweeps{
 	position: absolute;
 }
 #lrnBtn{
-	color: #fff;
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBg.svg');
 	font-size: 12px;
-	top: 51px;
-	right: 2px;
-	border: none;
-	padding: 10px 23px 15px 23px;
+	top: 43px;
+	right: 0px;
 	cursor: pointer;
 }
