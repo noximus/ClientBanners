@@ -7,7 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<div id="container">
 	<div id="learnMore">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -53,7 +53,7 @@
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query(".container")
+	container = FT.query("idcontainer")
 
 	// Apply clickTags
 	myFT.applyClickTag(container, 1);

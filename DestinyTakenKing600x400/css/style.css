@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.container {
+#container {
 position: absolute;
 width:600px;
 height:400px;
@@ -143,21 +143,21 @@ p#hashtag{
 	margin: 0;
 	opacity: 0;
 }
-.finaltxt{
+#finaltxt{
 	color: #fff;
 	opacity: 0;
 	display: none;
 	margin: 0;
 	margin-top: 160px;
 }
-h4.finaltxt{
+h4#finaltxt{
 	margin: 15px;
 	margin-top:134px;
 }
-h3.finaltxt{
+h3#finaltxt{
 	font-size: 25px;
 }
-h1.finaltxt{
+h1#finaltxt{
 	font-size: 35px;
 }
 #lrnBtn{

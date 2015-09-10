@@ -5,7 +5,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<div id="container">
 	<div id="learnMore"><a href="#"><img src="images/learnMore.png"><img src="images/arrow.png"></a></div>
 	<div id="enter">
 		<p id="enterFor"><img src="images/EnterForWin.png"></p>
@@ -27,8 +27,8 @@
 	
 	<div id="logo"><img src="images/DestinyLogo.png"></div>
 	<div id="finalFrame">
-		<h4 class='finaltxt'><img src="images/hashBundle.png"></h4>
-		<h3 class='finaltxt'><img src="images/extrodinaryGreat.png"></h3>
+		<h4 id='finaltxt'><img src="images/hashBundle.png"></h4>
+		<h3 id='hash'><img src="images/extrodinaryGreat.png"></h3>
 		<a href="#" id="lrnBtn">
 			<img src="images/learnBtn.png" >
 		</a>
@@ -45,7 +45,7 @@
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query(".container")
+	container = FT.query("#container")
 
 
 	// Apply clickTags

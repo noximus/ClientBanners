@@ -55,7 +55,7 @@ home_animation = (function() {
 		var noPurch = document.getElementById("noPurch");
 		var heroFrame = document.getElementById("heroFrame");
 		var finalFrame = document.getElementById("finalFrame");
-		var finaltxt= document.getElementsByClassName("finaltxt");
+		var finaltxt= document.getElementById("finaltxt");
 		var lrnBtn = document.getElementById("lrnBtn");
 	function frame1()
 	{

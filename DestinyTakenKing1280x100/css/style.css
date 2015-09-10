@@ -128,14 +128,14 @@ div#finalFrame{
 	margin: 0;
 	opacity: 0;
 }
-.finaltxt{
+#finaltxt{
 	color: #fff;
 	opacity: 0;
 	display: none;
 	margin: 0;
 	top: 10px;
 }
-.finaltxt img{
+#finaltxt img{
 	top: 20px;
 	left: 400px;
 	position: absolute;
@@ -145,13 +145,13 @@ div#finalFrame{
 	top: 10px;
 	right: 10px;
 }
-h4.finaltxt{
+h4#finaltxt{
 	margin: 15px;
 }
-h3.finaltxt{
+h3#finaltxt{
 	font-size: 25px;
 }
-h1.finaltxt{
+h1#finaltxt{
 	font-size: 35px;
 }
 .bundle img{
