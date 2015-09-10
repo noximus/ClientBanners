@@ -9,7 +9,6 @@ background: url('../images/starbg.jpg');
 overflow:hidden;
 cursor: pointer;
 display: block;
-	
 }
 #close {
 	position: absolute;
@@ -131,7 +130,6 @@ img#bundlesweeps{
 	left:0px;
 	z-index: 3000000;
 	display: none;
-	
 }
 #containerEx {
 	position: absolute;
@@ -272,6 +270,13 @@ img#bundlesweepsEx{
 	position: absolute;
 	right: 10px;
 	top: 10px;
+}
+img#noPurchEx{
+	top: 8px;
+	right: 350px;
+	position: absolute;
+	display: none;
+	opacity: 0;
 }
 .finaltxtEx{
 	color: #fff;
