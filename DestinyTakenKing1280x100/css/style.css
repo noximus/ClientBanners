@@ -160,16 +160,12 @@ h1.finaltxt{
 	right:10px !important;
 }
 #lrnBtn{
-	color: #fff;
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBg.svg');
-	font-size: 12px;
-	right: 3px;
-	top: 60px;
+	right: 0px;
+	bottom: 0px;
 	border: none;
-	padding: 10px 23px 15px 23px;
 	cursor: pointer;
 }
 #great{
