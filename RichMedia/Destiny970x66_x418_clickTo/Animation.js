@@ -91,8 +91,9 @@ var home_animation = {
   frame3Ex: function () {
     TweenLite.to(tweetEx, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
     TweenLite.to(heroFrameEx, 0.3, {delay:.5, display: 'block',opacity:1, ease: Linear.easeIn});
-    TweenLite.to(herosbgEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-    TweenLite.to(noPurch, .6, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(herosbgEx, 0.6, {delay:.5, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(hashtagEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(noPurch, .6, {delay:1.2, display: 'block', opacity:1, ease: Linear.easeIn});
     TweenLite.delayedCall(4, home_animation.frame4Ex);
   },
   frame4Ex: function () {

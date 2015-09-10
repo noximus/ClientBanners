@@ -236,6 +236,13 @@ img#noPurch{
 	display: none;
 	opacity: 0;
 }
+img#noPurchEx{
+	top: 37px;
+  right: 8px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
 #lrnBtnEx{
 	top: 28px;
 	position: absolute;
