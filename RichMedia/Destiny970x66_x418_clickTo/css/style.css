@@ -226,7 +226,7 @@ img#bundlesweepsEx{
 }
  img#noPurch{
 	top: 34px;
-	left: 8px;
+	right: 8px;
 	position: absolute;
 	display: none;
 	opacity: 0;
