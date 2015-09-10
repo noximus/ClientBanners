@@ -137,12 +137,12 @@ h1.finaltxt{
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBg.svg');
+	/*background: url('../images/btnBg.svg');*/
 	font-size: 12px;
 	top:150px;
-	left: 88px;
+	left: 79px;
 	border: none;
-	padding: 10px 23px 15px 23px;
+	/*padding: 10px 23px 15px 23px;*/
 	cursor: pointer;
 }
 #great{
