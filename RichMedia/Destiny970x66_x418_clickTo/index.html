@@ -87,7 +87,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
 <script type="text/javascript" src="http://cdn.flashtalking.com/frameworks/js/api/2/8/html5API.js"></script>
 <script type="text/javascript" src="manifest.js"></script>
-<script type="text/javascript" src="Animation.js"></script>
+<script type="text/javascript" src="Animation.min.js"></script>
 <script type="text/javascript">
 	function isPlaying(){
 		console.log("it's playing");
@@ -133,7 +133,7 @@
 	}
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
-	myFT.applyButton(unexpanded, expand);
+	// myFT.applyButton(unexpanded, expand);
 	// myFT.applyButton(vidHolder, pausePlay);
 	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
@@ -141,6 +141,7 @@
 	});
 
 	myFT.applyClickTag(expanded);
+	myFT.applyClickTag(unexpanded);
 	// setTimeout(onAutoExpand, 500);
 	// var ContractTimeOut = setTimeout(contract, 15000);
 	

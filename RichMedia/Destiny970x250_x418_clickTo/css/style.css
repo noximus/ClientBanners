@@ -2,14 +2,13 @@
 /* CSS Document */
 
 .container {
-position: absolute;
-width:970px;
-height:250px;
-background: url('../images/starbg.jpg');	
-overflow:hidden;
-cursor: pointer;
-display: block;
-	
+	position: absolute;
+	width:970px;
+	height:250px;
+	background: url('../images/starbg.jpg');	
+	overflow:hidden;
+	cursor: pointer;
+	display: block;
 }
 #close {
 	position: absolute;
