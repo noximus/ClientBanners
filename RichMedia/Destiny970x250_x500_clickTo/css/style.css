@@ -108,6 +108,14 @@ img#bundlesweeps{
 	right: 10px;
 	bottom: 10px;
 }
+img#noPurch{
+	top: 10px;
+	right: 350px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+
 #lrnBtn{
 	top: 163px;
 	right: 417px;
@@ -247,11 +255,8 @@ img#bundlesweepsEx{
 	opacity: 0;
 	display: none;
 	position: absolute;
-	background: url('../images/btnBgEx.svg');
-	font-size: 12px;
 	top:310px;
 	left: 88px;
 	border: none;
-	padding: 10px 23px 15px 23px;
 	cursor: pointer;
 }
