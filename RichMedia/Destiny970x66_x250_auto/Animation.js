@@ -36,6 +36,8 @@ var home_animation = {
   // learnMoreEx: document.getElementById("learnMoreEx"),
   ps4logoEx: document.getElementById("ps4logoEx"),
   bundlesweepsEx: document.getElementById("bundlesweepsEx"),
+  noPurch: document.getElementById("noPurch"),
+  noPurchEx: document.getElementById("noPurchEx"),
   frame1: function () {
     TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
     TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
@@ -50,9 +52,10 @@ var home_animation = {
   frame3: function () {
     TweenLite.to(tweet, 0.5, {opacity: 0, display: 'none', ease: Linear.easeOut});
     TweenLite.to(heroFrame, 0.3, {delay:.5, display: 'block', ease: Linear.easeIn});
-    TweenLite.to(herosbg, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-    TweenLite.to(hashtag, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-    TweenLite.delayedCall(4.5, home_animation.frame4);
+    TweenLite.to(herosbg, 0.6, {delay:.5, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(hashtag, .6, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.to(noPurch, .5, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.delayedCall(4, home_animation.frame4Ex);
   },
   frame4: function () {
     TweenLite.to(heroFrame, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
@@ -92,17 +95,18 @@ var home_animation = {
     TweenLite.to(heroFrameEx, 0.3, {delay:.5, display: 'block',opacity:1, ease: Linear.easeIn});
     TweenLite.to(herosBgEx, 0.6, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
     TweenLite.to(hashtagEx, 1, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-    TweenLite.delayedCall(3.5, home_animation.frame4Ex);
+    TweenLite.to(noPurchEx, .5, {delay:2, display: 'block', opacity:1, ease: Linear.easeIn});
+    TweenLite.delayedCall(4, home_animation.frame4Ex);
   },
   frame4Ex: function () {
     TweenLite.to(heroFrameEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     TweenLite.to(bloodEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     TweenLite.to(logoEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
     // TweenLite.to(learnMoreEx, .5, {opacity:0, display: 'none', ease:Linear.easeInOut});
-    TweenLite.to(finalFrameEx, .5, {delay: 0, opacity: 1, display: 'block', ease: Linear.easeIn});
+    TweenLite.to(finalFrameEx, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
     TweenLite.to(greatnessEx, 0.5, {delay: 1, opacity: 1, display:'block', ease: Linear.easeIn});
     TweenLite.to(bundlesweepsEx, .5, {delay:1.5, opacity:1, display: 'block', ease:Linear.easeIn});
-    TweenLite.to(lrnBtnEx2, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
+    TweenLite.to(lrnBtnEx2, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
   }
 };
 

@@ -102,6 +102,14 @@ img#bundlesweeps{
 	right: 5px;
 	top: 8px;
 }
+img#noPurch{
+	top: 8px;
+	right: 350px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+
 #lrnBtn{
 	top: 23px;
 	right: 0px;
@@ -266,6 +274,14 @@ img#bundlesweepsEx{
 	right: 10px;
 	top: 10px;
 }
+img#noPurchEx{
+	top: 8px;
+	right: 350px;
+	position: absolute;
+	display: none;
+	opacity: 0;
+}
+
 .finaltxtEx{
 	color: #fff;
 	opacity: 0;
