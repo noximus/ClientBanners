@@ -143,6 +143,10 @@ p#hashtag{
 	margin: 0;
 	opacity: 0;
 }
+#finalhash{
+	opacity: 0;
+	display: none;
+}
 #finaltxt{
 	color: #fff;
 	opacity: 0;

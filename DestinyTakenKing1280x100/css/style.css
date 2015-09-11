@@ -154,7 +154,11 @@ h3#finaltxt{
 h1#finaltxt{
 	font-size: 35px;
 }
-.bundle img{
+#bundle {
+	display: none;
+	opacity: 0;
+}
+#bundle img{
 	position: absolute;
 	top:10px !important;
 	right:10px !important;

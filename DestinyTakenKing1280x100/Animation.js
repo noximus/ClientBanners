@@ -18,8 +18,8 @@ home_animation = (function() {
 		var finalFrame = document.getElementById("finalFrame");
 		var finaltxt= document.getElementById("finaltxt");
 		var lrnBtn = document.getElementById("lrnBtn");
+		var bundle = document.getElementById("bundle");
 		var lrnBtn2 = document.getElementById("learnMore2");
-		var ps4logo = document.getElementById("ps4logo");
 
 	function frame1()
 	{
@@ -42,16 +42,17 @@ home_animation = (function() {
 		TweenLite.to(tweet, 0.5, {opacity: .5, display: 'none', ease: Linear.easeOut});
 		TweenLite.to(heros, 0.5, {delay:0, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(herosImg, 0.5, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(hashtag, 0.5, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(noPurch, 0.5, {delay:2.5, display: 'block', ease: Linear.easeOut});
+		TweenLite.to(hashtag, 0.5, {delay:1.3, display: 'block', opacity:1, ease: Linear.easeIn});
+		TweenLite.to(noPurch, 0.5, {delay:1.8, display: 'block', ease: Linear.easeOut});
 		TweenLite.delayedCall(3.5, frame4);
 	}
 
 	function frame4()
 	{
 		TweenLite.to(finalFrame, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
-		TweenLite.to(finaltxt, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
-		TweenLite.to(lrnBtn, 0.5, {delay: 2.5, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(finaltxt, 0.5, {delay: 1, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(lrnBtn, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(bundle, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
 	}
 
 

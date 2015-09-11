@@ -56,11 +56,12 @@ home_animation = (function() {
 		var heroFrame = document.getElementById("heroFrame");
 		var finalFrame = document.getElementById("finalFrame");
 		var finaltxt= document.getElementById("finaltxt");
+		var finalhash= document.getElementById("finalhash");
 		var lrnBtn = document.getElementById("lrnBtn");
 	function frame1()
 	{
-		TweenLite.to(enterFor, .8, {delay: .3, opacity: 1, ease: Linear.eastOut});
-		TweenLite.to(prize, .8, {delay:1.3, opacity: 1, ease: Linear.eastOut});
+		TweenLite.to(enterFor, .5, {delay: .3, opacity: 1, ease: Linear.easeIn});
+		TweenLite.to(prize, .5, {delay:.8, opacity: 1, ease: Linear.easeIn});
 		TweenLite.delayedCall(3, frame2);
 	}
 
@@ -79,7 +80,7 @@ home_animation = (function() {
 		TweenLite.to(heros, 0.5, {delay:0, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(herosImg, 0.5, {delay:1, display: 'block', opacity:1, ease: Linear.easeIn});
 		TweenLite.to(hashtag, 0.5, {delay:1.5, display: 'block', opacity:1, ease: Linear.easeIn});
-		TweenLite.to(noPurch, 0.5, {delay:2.5, display: 'block', ease: Linear.easeOut});
+		TweenLite.to(noPurch, 0.5, {delay:2, display: 'block', ease: Linear.easeIn});
 		TweenLite.delayedCall(3, frame4);
 	}
 
@@ -87,6 +88,7 @@ home_animation = (function() {
 	{
 		TweenLite.to(finalFrame, .5, {delay: .5, opacity: 1, display: 'block', ease: Linear.easeIn});
 		TweenLite.to(finaltxt, 0.5, {delay: 1.5, opacity: 1, display:'block', ease: Linear.easeIn});
+		TweenLite.to(finalhash, 0.5, {delay: 2, opacity: 1, display:'block', ease: Linear.easeIn});
 		TweenLite.to(lrnBtn, 0.5, {delay: 2.5, opacity: 1, display:'block', ease: Linear.easeIn});
 	}
 
