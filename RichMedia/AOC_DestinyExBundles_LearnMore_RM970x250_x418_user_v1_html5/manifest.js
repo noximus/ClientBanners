@@ -11,7 +11,7 @@ FT.manifest({
     "indentDown":0
   },
   "hideBrowsers": ["ie8"],
-  "videos": [{"name": "video1", "ref": "https://www.youtube.com/watch?v=V5N04b9ZlUA"}],
+  "videos": [{"name": "video1", "ref": "https://www.youtube.com/watch?v=K6_GQZJkhnQ"}],
   "instantAds":[
-  {"name":"video1", "type":"text", "default":"https://www.youtube.com/watch?v=V5N04b9ZlUA"}]
+  {"name":"video1", "type":"text", "default":"https://www.youtube.com/watch?v=K6_GQZJkhnQ"}]
 });
