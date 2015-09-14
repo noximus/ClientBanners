@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.container {
+#container {
 position: absolute;
 width:160px;
 height:600px;

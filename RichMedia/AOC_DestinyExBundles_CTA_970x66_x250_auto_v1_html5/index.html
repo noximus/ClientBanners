@@ -85,9 +85,6 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
-	function isPlaying(){
-		console.log("it's playing");
-	};
 	var myFT = new FT,
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
@@ -100,25 +97,20 @@
 		containerExWrapHolder.style.opacity = "1";
 		myFT.expand();
 		home_animation.frame1ExIntro();
-		console.log("expand");
-		// vid.play();
-		// vid.unmute();
+		vid.play();
+		vid.unmute();
 	},
 	onAutoExpand = function(){
 		unexpanded.style.display = "none";
 		expanded.style.display = "block";
 		myFT.expand();
-		// vid.video.addEventListener('play', isPlaying);
-		// vid.play();
-		// console.log("auto expand");
-
 	},
 	contract = function(e){
 		containerExWrapHolder.style.display = "none";
 		unexpanded.style.display = "block";
 		unexpanded.style.opacity = "1";
 		home_animation.frame1();
-    // vid.pause();
+    vid.pause();
     console.log("contract");
     if(e && e.type) {
 	    myFT.contract();
@@ -138,13 +130,14 @@
   },250);
 	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
-	myFT.applyButton(unexpanded, expand);
+	// myFT.applyButton(unexpanded, expand);
 	myFT.addEventListener('contract', contract);
 
 	myFT.applyClickTag(expanded);
+	myFT.applyClickTag(unexpanded);
 	setTimeout(onAutoExpand, 500);
 	var ContractTimeOut = setTimeout(contract, 15000);
-	
+
 
 </script>
 </body>

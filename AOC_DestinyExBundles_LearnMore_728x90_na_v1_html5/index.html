@@ -7,7 +7,7 @@
 <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
+<div id="container">
 	<div id="learnMore">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -24,7 +24,7 @@
 		<img src="images/tweet.png" >
 	</div>
 	<div id="heroFrame">
-	<p id="noPurch"><img src="images/nopurchase.png"></p>
+		<p id="noPurch"><img src="images/nopurchase.png"></p>
 		<div id="heros">
 			<img src="images/herosbg.jpg" id='herosbg'>
 		</div>
@@ -32,12 +32,9 @@
 		
 	</div>
 	<div id="finalFrame">
-		<img src="images/ps4logo.png" id='ps4logo'>
-		<img src="images/greatness.png"  id="greatness">
-		<img src="images/bundlesweeps.png"  id='bundlesweeps'>
-		<a href="#" id="lrnBtn">
-			<img src="images/learnBtn.png" >
-		</a>
+		<img src="images/greatness.png" width="424" height="50" id="greatness">
+		<img src="images/bundlesweeps.png" width="170" height="10" id='bundlesweeps'>
+		<a href="#" id="lrnBtn"><img src="images/learnBtn.png" ></a>
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png" >
@@ -55,8 +52,8 @@
 <script type="text/javascript">
 	var myFT = new FT,
 	// Declare HTML elements
-	container = FT.query(".container")
-	
+	container = FT.query("#container")
+
 	// Apply clickTags
 	myFT.applyClickTag(container, 1);
 
