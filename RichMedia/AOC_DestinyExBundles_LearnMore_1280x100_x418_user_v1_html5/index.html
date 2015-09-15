@@ -10,47 +10,43 @@
 <div class="container" id="container">
 	<div id="learnMore">
 		<a href="#">
-			<img src="images/small_hashTag.png">
+			<img src="images/learnMore.png">
 		</a>
 	</div>
 	<div id="enter">
 		<img src="images/enter.png" id="enterFor">	
 	</div>
-
-
-	<div id="prize"><img src="images/home_tag.png"></div>
 	
-	<div id="extra"><img src="images/extra.png"></div>
+	<div id="prize"><img src="images/home_tag.png"></div>
 
 
 	 <div id="tweet">
 		<img src="images/tweet.png">
 	</div>
 	<div id="heroFrame">
-
+		<div id="heros">
+			<img src="images/herosbg.jpg"id='herosbg'>
+		</div>
+		<p id="noPurchEx"><img src="images/nopurchase.png"></p>
 		<img src="images/hashtag.png" id="hashtag">
-		<img src="images/noPurchase250.png" id="noPurch">
+		
 	</div>
 	<div id="finalFrame">
-		<img src="images/ps4logo.png" id='ps4logo'>
 		<img src="images/greatness.png" id="greatness">
-		<img src="images/bundlesweeps.png" id='bundlesweeps'>
-		<a href="#" id="lrnBtn">
-			<img src="images/learnBtn.png" >
-		</a>
+		<img src="images/hashBundle.png" id='bundlesweeps'>
+		<img id='lrnBtn' src="images/btnBgEx.gif">
 	</div> 
 	<div id="wave">
 		<img src="images/wave1.png">
 	</div>
-	<div id="click_to_expand">
-		<img src="images/click_to_expand.png">
+	
+	<div id="logo">
+		<img src="images/destinylogo.png">
 	</div>
 </div>
 <div id="containerExWrap">
 <div class="containerEx" id="containerEx">
-
 <div id="close"><img src="images/close.png"></div>
-
 	<div id="learnMoreEx">
 		<a href="#">
 			<img src="images/learnMore.png">
@@ -59,10 +55,7 @@
 	<div id="enterEx">
 		<img src="images/enterEx.png" id="enterForEx">	
 	</div>
-	
-	<div id="prizeEx"><img src="images/enter.png"></div>
-
-
+	<div id="prizeEx"><img src="images/home_tagEx.png"></div>
 	 <div id="tweetEx">
 		<img src="images/tweetEx.png">
 	</div>
@@ -71,18 +64,18 @@
 			<img src="images/herosbgEx.jpg" id='herosbgEx'>
 		</div>
 		<img src="images/hashtagEx.png" id="hashtagEx">
-		<img src="images/noPurchaseEx.png" id="noPurchEx">
+		<img src="images/noPurchase418.png" id="noPurch">
 	</div>
 	<div id="finalFrameEx">
-		<img src="images/ps4logoEx.png" id='ps4logoEx'>
 		<img src="images/greatnessEx.png" id="greatnessEx">
 		<img src="images/bundlesweeps.png" id='bundlesweepsEx'>
-		<a href="#" id="lrnBtnEx">
-			<img src="images/learnBtn.png" >
-		</a>
+		<img src="images/learnBtn.gif" id='lrnBtnEx'>
 	</div> 
 	<div id="waveEx">
 		<img src="images/wave1.png">
+	</div>
+	<div id="bloodEx">
+		<img src="images/ESRB.png">
 	</div>
 	<div id="logoEx">
 		<img src="images/destinylogoEx.png">
@@ -90,9 +83,6 @@
 	<div id="vidHolder"></div>
 </div>
 </div>
-
-
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/plugins/CSSPlugin.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenLite.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/easing/EasePack.min.js"></script>
@@ -100,86 +90,49 @@
 <script type="text/javascript" src="manifest.js"></script>
 <script type="text/javascript" src="Animation.js"></script>
 <script type="text/javascript">
-
-function isPlaying(){
-		console.log("it's playing");
-	};
-
 	var myFT = new FT,
 	unexpanded = FT.query("#container"),
 	expanded = FT.query("#containerEx"),
 	vidHolder = FT.query("#vidHolder"),
-	close = FT.query("#close"),
 	containerExWrapHolder = FT.query("#containerExWrap"),
-	click_to_expand_btn = FT.query("#click_to_expand"),
+	click_to_expand_btn = FT.query("#lrnBtn"),
+	close = FT.query("#close"),
 	vid = myFT.insertVideo({
 		parent: vidHolder,
 		video: "video1",
 		controls: true,
-		width: "670",
+		width: "828",
 		height: "418",
 		muted: true
 	}),
-	
 	expand = function(){
 		unexpanded.style.display = "none";
-		expanded.style.display = "block";
+		containerExWrapHolder.style.display = "block";
 		containerExWrapHolder.style.opacity = "1";
 		myFT.expand();
+		home_animation.frame1ExIntro();
 		vid.play();
-		
-		 vid.unmute();
-		frame1();
-		// vid.video.play();
-		console.log('expand');
+		vid.unmute();
 	},
-
-
-	onAutoExpand = function(){
-		unexpanded.style.display = "none";
-		expanded.style.display = "block";
-		myFT.expand();
-		vid.video.addEventListener('play', isPlaying);
-		
-		//vid.mute();
-		vid.play();
-
-		//console.log(vid.video.currentTime);
-		//vid.muted = true;
-	},
-
-
-
 	contract = function(e){
-		expanded.style.display = "none";
+		containerExWrapHolder.style.display = "none";
 		unexpanded.style.display = "block";
 		unexpanded.style.opacity = "1";
-		containerExWrapHolder.style.opacity = "0";
-		// vid.video.pause();
-		//if(e && e.type) {
-			
-    	myFT.contract();
-    	vid.pause();
-    //}
+		home_animation.frame1();
+    vid.pause();
+    if(e && e.type) {
+	    myFT.contract();
+	  }
 	};
-	
-	myFT.applyButton(close, function(){contract()});
+	myFT.applyButton(close, function(){myFT.contract()});
 	myFT.applyButton(click_to_expand_btn, function(){expand()});
-
-	contract();
-
-	// vid.video.muted = true;
-	//myFT.addEventListener('contract', contract);
-	
-	myFT.applyButton(unexpanded, expand);
-	myFT.applyClickTag(expanded);
-	 myFT.applyButton(close, function(){myFT.contract()});
-	// setTimeout(function(){ myFT.expand(); }, 15000);
-	//setTimeout(onAutoExpand, 500);
-	// setTimeout(contract, 15000);
+	myFT.addEventListener('contract', contract);
 	myFT.addEventListener("instantads", function(){
 		myFT.videos.video1 = myFT.instantAds.youtubeTextVariable		
 	});
+
+	myFT.applyClickTag(expanded);
+	myFT.applyClickTag(unexpanded);	
 
 </script>
 </body>
